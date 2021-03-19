@@ -17,7 +17,7 @@ pkgs.mkShell rec {
   ];
 
   shellHook = ''
-    export NIX_PATH="nixpkgs=${sources.nixpkgs}:home-manager=${sources.home-manager}:nixos-config=/home/shimmerjs/dev/shimmerjs/files-i-need/machines/herq/configuration.nix"
+    export NIX_PATH="nixpkgs=${sources.nixpkgs}:home-manager=${sources.home-manager}:nixos-config=/home/shimmerjs/dev/shimmerjs/universe/machines/herq/configuration.nix"
   '';
 
 }
