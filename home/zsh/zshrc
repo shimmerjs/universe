@@ -1,0 +1,30 @@
+# nix
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then 
+  . $HOME/.nix-profile/etc/profile.d/nix.sh; 
+fi
+
+# symlink bazelisk to /usr/local/bin/bazel if it doesnt exist
+# if [ ! -f ~/bin/bazel ]; then
+#   mkdir -p ~/bin
+#   ln -s "$(which bazelisk)" ~/bin/bazel
+# fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f $HOME/.config/p10k.zsh ]] || source $HOME/.config/p10k.zsh
+
+# only put cwd on tab/window title
+export DISABLE_AUTO_TITLE="true"
+precmd () {print -Pn "\e]0;%~\a"}
+
+# brolang config
+export GO111MODULE="on"
+# set these explicitly so they are available to shell scripts
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+# add go binaries to my path
+export PATH="$PATH:$GOBIN" 
+# add user controlled bin directory to my path
+export PATH="$PATH:$HOME/bin"
+# make sure that git can find SSL CA info
+# TODO: replace this with realpath to avoid cacert version mismatches
+# export GIT_SSL_CAINFO="$(nix eval --raw nixpkgs.cacert)/etc/ssl/certs/ca-bundle.crt"

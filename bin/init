@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# used when setting up my osx machines for first time, installs nix
+# so that the rest of machine management can be done via nix tooling
+
+NIX_VERSION="2.3.7"
+
+echo "installing nix@$NIX_VERSION"
+
+sh <(curl -L https://releases.nixos.org/nix/nix-$NIX_VERSION/install) --darwin-use-unencrypted-nix-store-volume

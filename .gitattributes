@@ -1,0 +1,2 @@
+home/git/ncr/gitconfig filter=git-crypt diff=git-crypt
+system/ssh/keys/** filter=git-crypt diff=git-crypt
