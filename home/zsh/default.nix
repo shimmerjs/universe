@@ -16,10 +16,23 @@ in
       # TODO: try to put these aliases in the relevant modules
       k = "kubectl";
       ksh = "kitty +kitten ssh";
+      kcopy = "kitty +kitten clipboard";
+      kpaste = "kitty +kitten clipboard --get-clipboard";
+      j = "just";
+      # shortcut for showing images
+      icat = "kitty +kitten icat --scale-up";
+      # graphviz rendering with friendly settings for rendering in the terminal
+      # can use alone to add more parameters for experimentation or one-off
+      # changes
+      tdot = "dot -Tsvg -Gfontname=courier -Gbgcolor=transparent -Grankdir=LR -Gratio=0.4 -Granksep=0.2 -Gnodesep=0.1 -Gconcentrate -Nfontsize=16 -Nshape=box -Nstyle=filled,rounded,bold -Ncolor=seagreen -Nfillcolor=palegreen3 -Nfontname=courier -Efontname=courier -Ecolor=peachpuff4";
+      # shortcut for showing image rendered from default graphviz settings
+      # for terminal friendly graphs
+      idot = "tdot | icat";
       me = "just --justfile ~/dev/shimmerjs/universe/justfile";
+      batdiff = "git diff --name-only --diff-filter=d | xargs bat --diff";
     };
     shellAliases = {
-      ls = "ls -A";
+      ls = "ls -A --color=auto";
     };
     history = {
       save = 1000000000;
@@ -34,6 +47,7 @@ in
       # https://superuser.com/a/448892
       CLICOLOR = 1;
       GIT_SSL_CAINFO = "${cacert}/etc/ssl/certs/ca-bundle.crt";
+      BAT_THEME = "OneHalfLight";
     };
     plugins = with sources; [
       {

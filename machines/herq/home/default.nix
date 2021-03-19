@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ../../../home
@@ -5,6 +6,13 @@
     ../../../nix/config
     ./git.nix
     ./dazel.nix
+  ];
+
+  programs.firefox.enable = true;
+
+  home.packages = with pkgs; [
+    tdesktop
+    ssh-import-id
   ];
 
   home.file.".docker/config.json".text = ''

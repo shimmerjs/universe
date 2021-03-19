@@ -51,18 +51,9 @@
   };
   # go language settings
   "[go]" = {
-    "editor" = {
-      "formatOnSave" = true;
-      "codeActionsOnSave" = {
-        "source" = {
-          "organizeIMports" = true;
-        };
-      };
-      "codeActionsOnSaveTimeout" = 3000;
-      # Optional: Disable snippets, as they conflict with completion ranking.
-      "snippetSuggestions" = "none";
-    };
-    formatTool = "goimports";
+    "codeActionsOnSaveTimeout" = 3000;
+    # Optional: Disable snippets, as they conflict with completion ranking.
+    "snippetSuggestions" = "none";
   };
   "[go.mod]" = {
     "editor" = {
@@ -77,29 +68,14 @@
   # go extension settings
   "go" = {
     "useLanguageServer" = true;
-    "lintOnSave" = true;
-    "formatTool" = "goimports";
-    "autocompleteUnimportedPackages" = true;
   };
   "gopls" = {
     "deepCompletion" = true;
     "completeUnimported" = true;
-    "expandWorkspaceToModule" = false;
-    "experimentalPackageCacheKey" = true;
-    "experimentalDiagnosticsDelay" = "250ms";
-    "build.directoryFilters" = [
-      "-bazel-bin"
-      "-bazel-edge-infra"
-      "-bazel-out"
-      "-bazel-testlogs"
-    ];
+    "ui.diagnostic.experimentalDiagnosticsDelay" = "250ms";
   };
 
-  # okteto is used for remote vscode stuf
-  "okteto" = {
-    "upArgs" = "--file=hack/okteto.yaml";
-    "telemetry" = false; # are you kidding me lol
-  };
+  "rewrap.wrappingColumn" = 80;
 
   "files.autoSave" = true;
 

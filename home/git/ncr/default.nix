@@ -4,6 +4,9 @@
 
   # additional git config
   programs.git = {
+    # credential = {
+    #  username = "aw185176";
+    # };
     extraConfig = {
       # use work identity for work
       includeIf."gitdir:~/dev/ncr/" = {

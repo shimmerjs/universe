@@ -29,10 +29,10 @@
         "homepage": "https://cli.github.com",
         "owner": "cli",
         "repo": "cli",
-        "rev": "7d317a81bea0bf6770f9572909ea1c9d5f3f0907",
-        "sha256": "0a18yvxnyh5vbj0nad2v79hgmzmgv1y03invmnswjfb62hvri6hq",
+        "rev": "a12cbe7c016ae47bc42982dbca0550848d508c6b",
+        "sha256": "0j5884x7dfzcjgs8dd4945jn6s5p2sp7v47as0d55rnrxl4d6afg",
         "type": "tarball",
-        "url": "https://github.com/cli/cli/archive/7d317a81bea0bf6770f9572909ea1c9d5f3f0907.tar.gz",
+        "url": "https://github.com/cli/cli/archive/a12cbe7c016ae47bc42982dbca0550848d508c6b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "go-containerregistry": {
@@ -42,7 +42,7 @@
         "owner": "google",
         "repo": "go-containerregistry",
         "rev": "e39e523c09e69c3dd6c45b2fcf597da664a5161c",
-        "sha256": "0n88rm8ynh030f6580a1p69qz1dzz90zpmic08d19msak40v9r8x",
+        "sha256": "0ry0gfpaj1fk41w33kwnx05aqjjdlm6znssgyfqs9yf6spj1m6wi",
         "type": "tarball",
         "url": "https://github.com/google/go-containerregistry/archive/e39e523c09e69c3dd6c45b2fcf597da664a5161c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
@@ -53,11 +53,12 @@
         "homepage": "https://rycee.gitlab.io/home-manager/",
         "owner": "rycee",
         "repo": "home-manager",
-        "rev": "57518cd0bf2487403414da193ebc98c7f51c6842",
-        "sha256": "1zf1pf02j45sdc40n35d9wn5sjwxyr0i1y6x1115smzpdj0qmzjx",
+        "rev": "bf6b85136b47ab1a76df4a90ea4850871147494a",
+        "sha256": "11ssh8w6cy9mh233sc8a3sw4fkkj1z9fkqfsiljc404kb7p4jrhl",
         "type": "tarball",
-        "url": "https://github.com/rycee/home-manager/archive/57518cd0bf2487403414da193ebc98c7f51c6842.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+        "url": "https://github.com/rycee/home-manager/archive/bf6b85136b47ab1a76df4a90ea4850871147494a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "version": "21.11"
     },
     "jfrog-cli": {
         "branch": "master",
@@ -71,16 +72,28 @@
         "url": "https://github.com/jfrog/jfrog-cli/archive/42214d7bda5323e0143d264ee03aca6663e73a2a.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "kinto": {
+        "branch": "master",
+        "description": "Mac-style shortcut keys for Linux & Windows.",
+        "homepage": "http://kinto.sh",
+        "owner": "rbreaves",
+        "repo": "kinto",
+        "rev": "e69e529a18a45c8190a15dbe4ebfb8be0e3f73d8",
+        "sha256": "0i86iar0qhy39zdmhv17pqcf6fpxfy57617l61a9p91v5qpgck31",
+        "type": "tarball",
+        "url": "https://github.com/rbreaves/kinto/archive/e69e529a18a45c8190a15dbe4ebfb8be0e3f73d8.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "kpt": {
         "branch": "master",
         "description": null,
         "homepage": "https://googlecontainertools.github.io/kpt",
         "owner": "googlecontainertools",
         "repo": "kpt",
-        "rev": "fd54ffa48913db251f9ace8ad36fe2daefae5c5d",
-        "sha256": "0xawa96x8zj08aky3j9sraaaw5nyfyyh17zsd5x9ads9j08vxsrq",
+        "rev": "7c8067403f623fc9796aa73d96eeb05979d035aa",
+        "sha256": "1d87x00mlp24mfzxwf30ssi3gvv9fll9gqggmik8a01gpl59cw3x",
         "type": "tarball",
-        "url": "https://github.com/googlecontainertools/kpt/archive/fd54ffa48913db251f9ace8ad36fe2daefae5c5d.tar.gz",
+        "url": "https://github.com/googlecontainertools/kpt/archive/7c8067403f623fc9796aa73d96eeb05979d035aa.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "niv": {
@@ -101,11 +114,12 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5df05c902cde398e056eb6271d5fe13e418db4c6",
-        "sha256": "12plc7k251z1dmmrd29lyrpw0xmjvmf79yj568aapzrcki5mrw74",
+        "rev": "253aecf69ed7595aaefabde779aa6449195bebb7",
+        "sha256": "14szn1k345jfm47k6vcgbxprmw1v16n7mvyhcdl7jbjmcggjh4z7",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/5df05c902cde398e056eb6271d5fe13e418db4c6.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+        "url": "https://github.com/NixOS/nixpkgs/archive/253aecf69ed7595aaefabde779aa6449195bebb7.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "version": "21.11"
     },
     "okteto": {
         "branch": "master",

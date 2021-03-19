@@ -1,7 +1,7 @@
 { sources ? import ../../nix/sources.nix, pkgs ? import ../../nix { inherit sources; } }:
 pkgs.buildGoModule rec {
   pname = "github-cli";
-  version = "0.0.1";
+  version = "1.8.1";
 
   src = pkgs.fetchFromGitHub {
     owner = sources.github-cli.owner;
@@ -12,7 +12,7 @@ pkgs.buildGoModule rec {
 
   subPackages = [ "cmd/gh" ];
 
-  vendorSha256 = "12ka5x5m4h8dfpcdhfjc5lz6bm8pzfqkbhs9j3a8w08xsi93dvdz";
+  vendorSha256 = "0j2jy7n7hca5ybwwgh7cvm77j96ngaq1a1l5bl70vjpd8hz2qapc";
 
   meta = with pkgs.lib; {
     description = "Join GitHub in taking over the free world.";

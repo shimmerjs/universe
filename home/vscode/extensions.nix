@@ -3,8 +3,8 @@
     {
       name = "vscode-bazel";
       publisher = "BazelBuild";
-      version = "0.4.0";
-      sha256 = "0p018878pxr7vxr6375fywchzq1xwvxnjrb4zvp444s6p3sknxxg";
+      version = "0.4.1";
+      sha256 = "0rbaj9kj61kkksxrsmn1c16pg5fyz4sai6m2isx2y30q2mpaf8sw";
     }
     {
       name = "better-toml";
@@ -15,50 +15,32 @@
     {
       name = "prettier-vscode";
       publisher = "esbenp";
-      version = "5.8.0";
-      sha256 = "0h7wc4pffyq1i8vpj4a5az02g2x04y7y1chilmcfmzg2w42xpby7";
+      version = "6.4.0";
+      sha256 = "0k5x5d5axbpgyiy6j7q7d2rgxz6mg60sc0qgcca481srnca4j7x4";
     }
     {
       name = "markdown-table-formatter";
       publisher = "fcrespo82";
-      version = "2.1.3";
-      sha256 = "17hfch0ghs9xv0b4x4b8b7ykkch3ncsz4rwq8nsrrsbrplpprsaw";
+      version = "2.1.8";
+      sha256 = "01x0w4lpnjq7dv9cp5zky18sh369vbmkdxh9gqplgvibz1r3i8m3";
     }
     {
       name = "go";
       publisher = "golang";
-      version = "0.19.1";
-      sha256 = "1824l99r7xj3bzfxzkw6m55giyhq017w6l5r49kfda9rm6xxsb6h";
+      version = "0.25.0";
+      sha256 = "1g73bghi8knnvchkhdynvai034pnb95krks2xzhdhdac07dj227b";
     }
     {
       name = "nix-ide";
       publisher = "jnoortheen";
-      version = "0.1.3";
-      sha256 = "1c2yljzjka17hr213hiqad58spk93c6q6xcxvbnahhrdfvggy8al";
+      version = "0.1.12";
+      sha256 = "1wkc5mvxv7snrpd0py6x83aci05b9fb9v4w9pl9d1hyaszqbfnif";
     }
     {
       name = "python";
       publisher = "ms-python";
-      version = "2020.12.422005962";
-      sha256 = "1w1ci6hryqkjjjix719nvbwr55hb2x5zmbh23bfzhzh8bi2paq5l";
-    }
-    {
-      name = "sublime-keybindings";
-      publisher = "ms-vscode";
-      version = "4.0.7";
-      sha256 = "15333p2lqbm737kr8z95dfm2jiyj92vdjbh787zcjhsqmxcl504i";
-    }
-    {
-      name = "remote-kubernetes";
-      publisher = "Okteto";
-      version = "0.1.30";
-      sha256 = "0wb4ydrzlry8lc32jwn54q6345ygkcz2r3mmndac6b57hwzg12j5";
-    }
-    {
-      name = "prettier-vscode";
-      publisher = "prettier";
-      version = "3.14.1";
-      sha256 = "1wmv4n3gf1zkzd17zladanyvi4wcb664hg7k3ka3l6axvfd0ki4k";
+      version = "2021.5.842923320";
+      sha256 = "183ram995n9dqg7d9g3bn30a1mg7nkkg4knr814f4j9lqzsai22r";
     }
     {
       name = "just";

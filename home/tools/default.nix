@@ -4,7 +4,6 @@ let
   github-cli = import ./github-cli.nix { };
   wally-cli = import ./wally.nix { };
   kpt = import ./kpt.nix { };
-  okteto = import ./okteto.nix { };
   crane = import ./crane.nix { };
   # python tools
   dazel = import ./dazel.nix { };
@@ -13,9 +12,14 @@ in
   home.packages = with pkgs; [
     # tools that are pulled from nixpkgs
 
+    # virtualization
+    qemu
+    podman
+
     # misc
     curl
     fzf
+    bat
     htop
     jq
     coreutils
@@ -24,6 +28,9 @@ in
     tree
     pandoc
     graphviz # a picture is worth a thousand words
+
+    # text editors
+    vim
 
     # build tools
     just
@@ -41,10 +48,11 @@ in
     golint
     gocode-gomod
     goimports
+    golangci-lint
     # use node 12 because we need to hotswap the node binary vscode
     # server brings ^ _ ^
     # https://github.com/microsoft/vscode-remote-release/issues/648#issuecomment-503148523
-    nodejs-12_x
+    nodejs-14_x
     nixpkgs-fmt
     (python3.withPackages
       # install pip because its not included with the python3 nixpkg by
@@ -62,7 +70,6 @@ in
     # tools i maintain the package defs for
     github-cli
     wally-cli # for flashing firmware to my ergoxo
-    okteto
     crane
   ];
 }

@@ -4,7 +4,7 @@
   # domain mapping so credential helper knows which secret in `pass` to use 
   home.file.".config/pass-git-helper/git-pass-mapping.ini".text = ''
     # default to personal    
-    [github.com/*]
+    [github.com]
       target=dev/github/booninite
 
     [github.com/ncr-swt-*]

@@ -26,22 +26,40 @@
 
       # scrollback
       scrollback_lines = 50000;
+      scrollback_pager = "fzf --ansi --no-bold";
 
       # sessions
       startup_session = "sessions/default.conf";
+
+      enabled_layouts = "vertical";
+
+      # clipboard control, enable reading from clipboard
+      clipboard_control = "write-clipboard read-clipboard write-primary read-primary";
     };
     keybindings = {
       # tabs
-      "cmd+right" = "next_tab";
-      "cmd+left" = "previous_tab";
-      "cmd+w" = "close_tab";
-      "cmd+1" = "goto_tab 1";
-      "cmd+2" = "goto_tab 2";
-      "cmd+3" = "goto_tab 3";
-      "cmd+4" = "goto_tab 4";
-      "cmd+5" = "goto_tab 5";
-      "cmd+6" = "goto_tab 6";
-      "cmd+l" = "goto_tab -1";
+      "cmd+shift+right" = "next_tab";
+      "cmd+shift+left" = "previous_tab";
+      "cmd+shift+w" = "close_tab";
+      "cmd+shift+1" = "goto_tab 1";
+      "cmd+shift+2" = "goto_tab 2";
+      "cmd+shift+3" = "goto_tab 3";
+      "cmd+shift+4" = "goto_tab 4";
+      "cmd+shift+5" = "goto_tab 5";
+      "cmd+shift+6" = "goto_tab 6";
+      "cmd+shift+l" = "goto_tab -1";
+
+      # window management
+      "cmd+s" = "launch --cwd=current";
+      "cmd+right" = "next_window";
+      "cmd+left" = "previous_window";
+      "cmd+w" = "close_window";
+      "cmd+1" = "first_window";
+      "cmd+2" = "second_window";
+      "cmd+3" = "third_window";
+      "cmd+4" = "fourth_window";
+      "cmd+5" = "fifth_window";
+      "cmd+6" = "sixth_window";
 
       # font sizes
       "cmd+equal" = "change_font_size current + 2.0";
@@ -49,13 +67,13 @@
       "cmd+minus" = "change_font_size current - 2.0";
       "cmd+shift+minus" = "change_font_size all - 2.0";
 
-      # TODO: setup scrollback_pager hotkeys
       # https://sw.kovidgoyal.net/kitty/#the-scrollback-buffer
+      "cmd+shift+h" = "show_scrollback";
 
       # reset terminal
       "cmd+r" = "clear_terminal reset active";
       "cmd+k" = "clear_terminal clear active";
-      "ctrl+k" = "clear + terminale scroll active";
+      "ctrl+k" = "clear + terminal scroll active";
     };
     extraConfig = ''
       include themes/ayu_light.conf

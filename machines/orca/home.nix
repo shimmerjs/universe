@@ -9,11 +9,21 @@ in
 {
   imports = [
     ../../home
-    ../../git
+    ../../home/git
+    ../../home/ssh
     ../../nix/config
   ];
 
   home.sessionVariables = {
     KUBECONFIG = "${config.home.homeDirectory}/dev/homestar/kubeconfig";
   };
+
+  programs.ssh.extraConfig = ''
+    Host github.com
+      User git
+      Port 22
+      HostName github.com
+      PreferredAuthentications publickey
+      IdentityFile /Users/shimmerjs/.ssh/booninite
+  '';
 }
