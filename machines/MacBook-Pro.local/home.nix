@@ -42,8 +42,13 @@ in
     fi
   '';
 
+  # ncr specific local prefixes
+  programs.vscode.userSettings.gopls.formatting.local = "github.com/ncr-swt-";
+
+
   # packages i only use at work
-  home.packages = with pkgs; [
-    jfrog
-  ];
+  home.packages = with pkgs;
+    [
+      jfrog
+    ];
 }
