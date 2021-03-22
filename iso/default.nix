@@ -11,6 +11,14 @@
   # Enable SSH in the boot process.
   systemd.services.sshd.wantedBy = pkgs.lib.mkForce [ "multi-user.target" ];
   users.users.root.openssh.authorizedKeys.keys = [
-    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD7aNBkcQK8pOMhsFpDmY8kkI+jxnwqgark6GImy6Ze4P2+yOyoT7uMbf+KLGOU5VX5etaRCN4ZyArWJz4UtTIuoL8tda00RKW0e8EDvlYI/d7eAs9EHih1uqZCPQZjwdEnB94VI4UG/9VDHTSUO4aI+b7Hnu4q0YaWt+hvB+GKK9v6iTRy6mErjeBBUn8a6XxZgFycdNZinPwBUfr2kB3pmTp2U55lm3zN66wOhGl4Ap9mY2rX0OyA3z8SThetnMLcNqmZ0jyS7vTptCf8ZejS06GTnIR9DiTTbASG8mexudbVj6erZXgyRXb9vqUAzOcGzzzigp8jel9Wws7L1X+B shimmerjs@overlook"
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEHuRob4aBH21QRY9HgbuwzH3z6QwkF87fJNEI1oHz1l scottshuffler@gmail.com"
   ];
+
+  networking = {
+    usePredictableInterfaceNames = false;
+    interfaces.eth0.ip4 = [{
+      address = "192.168.86.51";
+      prefixLength = 24;
+    }];
+  };
 }
