@@ -51,18 +51,9 @@
   };
   # go language settings
   "[go]" = {
-    "editor" = {
-      "formatOnSave" = true;
-      "codeActionsOnSave" = {
-        "source" = {
-          "organizeIMports" = true;
-        };
-      };
-      "codeActionsOnSaveTimeout" = 3000;
-      # Optional: Disable snippets, as they conflict with completion ranking.
-      "snippetSuggestions" = "none";
-    };
-    formatTool = "goimports";
+    "codeActionsOnSaveTimeout" = 3000;
+    # Optional: Disable snippets, as they conflict with completion ranking.
+    "snippetSuggestions" = "none";
   };
   "[go.mod]" = {
     "editor" = {
@@ -77,16 +68,12 @@
   # go extension settings
   "go" = {
     "useLanguageServer" = true;
-    "lintOnSave" = true;
-    "formatTool" = "goimports";
-    "autocompleteUnimportedPackages" = true;
   };
   "gopls" = {
     "deepCompletion" = true;
     "completeUnimported" = true;
-    "expandWorkspaceToModule" = false;
-    "experimentalPackageCacheKey" = true;
-    "experimentalDiagnosticsDelay" = "250ms";
+    "ui.diagnostic.experimentalDiagnosticsDelay" = "250ms";
+    "formatting.local" = "github.com/ncr-swt-retail/edge-infra";
     "build.directoryFilters" = [
       "-bazel-bin"
       "-bazel-edge-infra"
