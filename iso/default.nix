@@ -14,11 +14,8 @@
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEHuRob4aBH21QRY9HgbuwzH3z6QwkF87fJNEI1oHz1l scottshuffler@gmail.com"
   ];
 
-  networking = {
-    usePredictableInterfaceNames = false;
-    interfaces.eth0.ip4 = [{
-      address = "192.168.86.51";
-      prefixLength = 24;
-    }];
-  };
+  boot.extraModulePackages = [ config.boot.kernelPackages.r8125 ];
+   nixpkgs.config.allowUnfree = true;
 }
+
+
