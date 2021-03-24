@@ -17,6 +17,10 @@ sudo lvcreate -L 8G -n swap vg
 
 sudo lvcreate -l '100%FREE' -n root vg
 
+sudo lvchange -a y /dev/vg/swap
+
+sudo lvchange -a y /dev/vg/root
+
 
 # formatting
 sudo mkfs.fat -F 32 -n boot /dev/nvme0n1p2
@@ -27,23 +31,23 @@ sudo mkfs.ext4 -L nixos /dev/vg/root
 
 
 # installing
-mount /dev/vg/root /mnt
+sudo mount /dev/vg/root /mnt
 
-mkdir -p /mnt/boot
+sudo mkdir -p /mnt/boot
 
-mount /dev/nvme0n1p2 /mnt/boot
+sudo mount /dev/nvme0n1p2 /mnt/boot
 
-swapon /dev/vg/swap
+sudo swapon /dev/vg/swap
 
 
 # initializing 
-nixos-generate-config --root /mnt
+sudo nixos-generate-config --root /mnt
 
-vim /mnt/etc/nixos/configuration.nix // do what you want 
+sudo vim /mnt/etc/nixos/configuration.nix // do what you want 
 
-nixos-install
+sudo nixos-install
 
-reboot
+sudo reboot
 
 
 # deleting
