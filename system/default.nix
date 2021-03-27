@@ -13,7 +13,7 @@
 
   # i am always allow to do nix stuff on my own machines
   nix = {
-    allowedUsers = [ "shimmerjs" ];
-    trustedUsers = [ "root" "shimmerjs" ];
+    allowedUsers = [ "scott" ];
+    trustedUsers = [ "root" "scott" ];
   };
 }

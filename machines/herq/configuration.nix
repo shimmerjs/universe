@@ -12,7 +12,7 @@ in
     ../../system
   ];
 
-  home-manager.users.shimmerjs = import ./home;
+  home-manager.users.scott = import ./home;
 
   # pretty sure this is going to be true for all my nixos boxes
   # but need to set up a couple more first before pulling into ../../nixos

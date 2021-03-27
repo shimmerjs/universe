@@ -17,8 +17,8 @@ in
 
   programs.git.extraConfig = {
     # use my personal identity my person
-    includeIf."gitdir:~/dev/shimmerjs/" = {
-      path = "~/.config/git/shimmerjs";
+    includeIf."gitdir:~/dev/" = {
+      path = "~/.config/git/js";
     };
     # use work identity for work
     includeIf."gitdir:~/dev/ncr/" = {
