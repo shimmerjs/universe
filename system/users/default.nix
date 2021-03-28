@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  users.mutableUsers = false;
+  users.mutableUsers = true;
 
   users.users.shimmerjs = {
     isNormalUser = true;
