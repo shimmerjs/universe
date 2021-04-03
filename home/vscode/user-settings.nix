@@ -73,20 +73,9 @@
     "deepCompletion" = true;
     "completeUnimported" = true;
     "ui.diagnostic.experimentalDiagnosticsDelay" = "250ms";
-    "formatting.local" = "github.com/ncr-swt-retail/edge-infra";
-    "build.directoryFilters" = [
-      "-bazel-bin"
-      "-bazel-edge-infra"
-      "-bazel-out"
-      "-bazel-testlogs"
-    ];
   };
 
-  # okteto is used for remote vscode stuf
-  "okteto" = {
-    "upArgs" = "--file=hack/okteto.yaml";
-    "telemetry" = false; # are you kidding me lol
-  };
+  "rewrap.wrappingColumn" = 80;
 
   "files.autoSave" = true;
 

@@ -49,16 +49,10 @@
       sha256 = "15333p2lqbm737kr8z95dfm2jiyj92vdjbh787zcjhsqmxcl504i";
     }
     {
-      name = "remote-kubernetes";
-      publisher = "Okteto";
-      version = "0.1.30";
-      sha256 = "0wb4ydrzlry8lc32jwn54q6345ygkcz2r3mmndac6b57hwzg12j5";
-    }
-    {
-      name = "prettier-vscode";
-      publisher = "prettier";
-      version = "3.14.1";
-      sha256 = "1wmv4n3gf1zkzd17zladanyvi4wcb664hg7k3ka3l6axvfd0ki4k";
+      name = "rewrap";
+      publisher = "stkb";
+      version = "1.14.0";
+      sha256 = "0phffzqv1nmwsgcx6abgzbzw95zc0zlnhsjv2grs5mcsgrghl759";
     }
     {
       name = "just";
