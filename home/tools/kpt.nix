@@ -1,7 +1,7 @@
 { sources ? import ../../nix/sources.nix, pkgs ? import ../../nix { inherit sources; } }:
 pkgs.buildGoModule rec {
   pname = "kpt";
-  version = "0.36.1";
+  version = "0.39.1";
 
   src = pkgs.fetchFromGitHub {
     inherit (sources.kpt) owner repo rev sha256;
@@ -9,7 +9,7 @@ pkgs.buildGoModule rec {
 
   subPackages = [ "." ];
 
-  vendorSha256 = "06kx85bf8mjmyhz5gp0la4fr8psnfz6i2rchc22sz2pgmsng1dfr";
+  vendorSha256 = "1w8qgg49ijcsgrscq7c0qk4bwxkxfm0jlch7p9j74g4sc4737wgl";
 
   meta = with pkgs.lib; {
     description = "kpt is a toolkit to help you manage, manipulate, customize, and apply Kubernetes Resource configuration data files.";
