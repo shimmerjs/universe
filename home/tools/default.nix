@@ -41,6 +41,7 @@ in
     golint
     gocode-gomod
     goimports
+    golangci-lint
     # use node 12 because we need to hotswap the node binary vscode
     # server brings ^ _ ^
     # https://github.com/microsoft/vscode-remote-release/issues/648#issuecomment-503148523
