@@ -20,7 +20,8 @@ in
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.loader.grub.device = "/dev/disk/by-uuid/18AA-4CFE";
-
+  # required for VM support
+  boot.kernelModules = [ "kvm-adm" "kvm-intel" ];
   boot.kernel.sysctl = {
     "fs.inotify.max_user_watches" = "1048576";
   };

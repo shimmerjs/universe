@@ -26,9 +26,11 @@
 
       # scrollback
       scrollback_lines = 50000;
+      scrollback_pager = "fzf --ansi --no-bold";
 
       # sessions
       startup_session = "sessions/default.conf";
+
     };
     keybindings = {
       # tabs
@@ -43,19 +45,31 @@
       "cmd+6" = "goto_tab 6";
       "cmd+l" = "goto_tab -1";
 
+      # window management
+      "cmd+s" = "launch --cwd=current";
+      "cmd+shift+right" = "next_window";
+      "cmd+shift+left" = "previous_window";
+      "cmd+shift+w" = "close_window";
+      "cmd+shift+1" = "first_window";
+      "cmd+shift+2" = "second_window";
+      "cmd+shift+3" = "third_window";
+      "cmd+shift+4" = "fourth_window";
+      "cmd+shift+5" = "fifth_window";
+      "cmd+shift+6" = "sixth_window";
+
       # font sizes
       "cmd+equal" = "change_font_size current + 2.0";
       "cmd+shift+equal" = "change_font_size all + 2.0";
       "cmd+minus" = "change_font_size current - 2.0";
       "cmd+shift+minus" = "change_font_size all - 2.0";
 
-      # TODO: setup scrollback_pager hotkeys
       # https://sw.kovidgoyal.net/kitty/#the-scrollback-buffer
+      "cmd+shift+h" = "show_scrollback";
 
       # reset terminal
       "cmd+r" = "clear_terminal reset active";
       "cmd+k" = "clear_terminal clear active";
-      "ctrl+k" = "clear + terminale scroll active";
+      "ctrl+k" = "clear + terminal scroll active";
     };
     extraConfig = ''
       include themes/ayu_light.conf

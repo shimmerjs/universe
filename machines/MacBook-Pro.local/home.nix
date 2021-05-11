@@ -5,8 +5,6 @@ let
   sources = import ../../nix/sources.nix;
   # import niv-managed pkgs overlay
   pkgs = import ../../nix { inherit sources; };
-  jfrog = import ../../home/tools/jfrog-cli.nix { };
-  berglas = import ../../home/tools/berglas.nix { };
 in
 {
   imports = [
@@ -42,9 +40,4 @@ in
     fi
   '';
 
-  # packages i only use at work
-  home.packages = with pkgs;
-    [
-      jfrog
-    ];
 }

@@ -4,7 +4,6 @@ let
   github-cli = import ./github-cli.nix { };
   wally-cli = import ./wally.nix { };
   kpt = import ./kpt.nix { };
-  okteto = import ./okteto.nix { };
   crane = import ./crane.nix { };
   # python tools
   dazel = import ./dazel.nix { };
@@ -63,7 +62,6 @@ in
     # tools i maintain the package defs for
     github-cli
     wally-cli # for flashing firmware to my ergoxo
-    okteto
     crane
   ];
 }
