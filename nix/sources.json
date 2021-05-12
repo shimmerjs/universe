@@ -42,7 +42,7 @@
         "owner": "google",
         "repo": "go-containerregistry",
         "rev": "e39e523c09e69c3dd6c45b2fcf597da664a5161c",
-        "sha256": "0n88rm8ynh030f6580a1p69qz1dzz90zpmic08d19msak40v9r8x",
+        "sha256": "0ry0gfpaj1fk41w33kwnx05aqjjdlm6znssgyfqs9yf6spj1m6wi",
         "type": "tarball",
         "url": "https://github.com/google/go-containerregistry/archive/e39e523c09e69c3dd6c45b2fcf597da664a5161c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
