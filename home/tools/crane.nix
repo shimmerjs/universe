@@ -9,7 +9,7 @@ pkgs.buildGoModule rec {
 
   subPackages = [ "cmd/crane" ];
 
-  vendorSha256 = "0n88rm8ynh030f6580a1p69qz1dzz90zpmic08d19msak40v9r8x";
+  vendorSha256 = null;
 
   meta = with pkgs.lib; {
     description = "Go library and CLIs for working with container registries";
