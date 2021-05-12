@@ -23,5 +23,5 @@ in
   };
 
   # TODO: clean up, this is duped from home/git/ncr
-  home.file.".config/git/ncr".text = builtins.readFile ./gitconfig;
+  home.file.".config/git/ncr".text = builtins.readFile ../../home/git/ncr/gitconfig;
 }
