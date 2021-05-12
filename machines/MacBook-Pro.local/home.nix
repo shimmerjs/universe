@@ -39,9 +39,4 @@ in
       ln -s "$(which bazelisk)" ~/bin/bazel
     fi
   '';
-
-  programs.ssh.extraConfig = ''
-    Host edge-dev
-      ProxyCommand ssh -o 'ForwardAgent yes' 192.168.1.226 'ssh-add /home/shimmerjs/dev/ncr/edge-infra/.vagrant/machines/default/libvirt/private_key && nc %h %p'
-  '';
 }
