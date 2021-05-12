@@ -13,7 +13,7 @@
         UserKnownHostsFile /dev/null
         StrictHostKeyChecking no
         PasswordAuthentication no
-        IdentityFile /home/shimmerjs/dev/ncr/vagrant/.vagrant/machines/default/libvirt/private_key
+        IdentityFile ~/.ssh/edge-dev-vagrant-ssh-key
         IdentitiesOnly yes
         LogLevel FATAL
     '';
