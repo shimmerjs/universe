@@ -10,6 +10,7 @@ in
   imports = [
     ../../nix/config
     ../../home
+    ../../home/ssh
     ../../home/git/ncr
   ];
 

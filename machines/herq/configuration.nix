@@ -29,13 +29,13 @@ in
   # fetched this via `vagrant ssh-config`, should automate in future
   programs.ssh.extraConfig = ''
     Host edge-dev
-      HostName 192.168.121.193
+      HostName 192.168.121.196
       User vagrant
       Port 22
       UserKnownHostsFile /dev/null
       StrictHostKeyChecking no
       PasswordAuthentication no
-      IdentityFile /home/shimmerjs/dev/ncr/edge-infra/.vagrant/machines/default/libvirt/private_key
+      IdentityFile /home/shimmerjs/dev/ncr/vagrant/.vagrant/machines/default/libvirt/private_key
       IdentitiesOnly yes
       LogLevel FATAL
   '';

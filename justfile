@@ -1,5 +1,8 @@
 homies := "dakale scottshuffler booninite"
 
+sh +ARGS:
+  nix-shell --run "{{ARGS}}"
+
 build hostname=`hostname`:
   #!/usr/bin/env bash
   if [ {{os()}} == "macos" ]; then
