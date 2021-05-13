@@ -16,7 +16,7 @@ in
       # TODO: try to put these aliases in the relevant modules
       k = "kubectl";
       ksh = "kitty +kitten ssh";
-      me = "just --justfile ~/dev/shimmerjs/universe/justfile";
+      me = "just --justfile ~/dev/universe/justfile";
     };
     shellAliases = {
       ls = "ls -A";

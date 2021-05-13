@@ -5,9 +5,9 @@
 
     enable = true;
 
-    userName = "alex weidner";
+    userName = "scott shuffler";
     # override for individual file paths for some machines (e.g., work)
-    userEmail = "shimmerjs@dpu.sh";
+    userEmail = "scottshuffler@gmail.com";
 
     extraConfig = {
       # credentials helper

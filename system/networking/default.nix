@@ -1,4 +1,4 @@
 {
   networking.useDHCP = false;
-  networking.interfaces.eno1.useDHCP = true;
+  networking.interfaces.enp2s0.useDHCP = true;
 }
