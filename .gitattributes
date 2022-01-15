@@ -1,2 +1,2 @@
-home/git/ncr/gitconfig filter=git-crypt diff=git-crypt
-system/ssh/keys/** filter=git-crypt diff=git-crypt
+modules/home-manager/profiles/work/gitconfig filter=git-crypt diff=git-crypt
+modules/nixos/ssh/keys/** filter=git-crypt diff=git-crypt

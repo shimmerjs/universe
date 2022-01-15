@@ -1,0 +1,24 @@
+# nix
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ]; then 
+  . $HOME/.nix-profile/etc/profile.d/nix.sh; 
+fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f $HOME/.config/p10k.zsh ]] || source $HOME/.config/p10k.zsh
+
+# only put cwd on tab/window title
+export DISABLE_AUTO_TITLE="true"
+precmd () {print -Pn "\e]0;%~\a"}
+
+# brolang config
+export GO111MODULE="on"
+# set these explicitly so they are available to shell scripts
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+
+export PATH="$HOME/bin:$GOBIN:$UNIVERSE_HOME/bin:$PATH"
+# - add user controlled bin directory to front of PATH, ensures
+#   those binaries override nix provided binaries when provided
+# - followed by go binaries
+# - followed by this repositories (universe) utils
+export PATH="$HOME/bin:$GOBIN:$UNIVERSE_HOME/bin:$PATH"

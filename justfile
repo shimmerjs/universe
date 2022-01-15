@@ -1,31 +1,43 @@
-homies := "dakale scottshuffler booninite"
+set dotenv-load
+# makes justfile variables available to recipes as environment 
+# variables
+set export
 
+HOMIE := env_var_or_default("HOMIE", `whoami`)
+HOSTNAME := `hostname`
+MACHINE := "homies/" + HOMIE + "/machines/" + HOSTNAME
+CLUSTER_CONFIG := "homies/" + HOMIE + "/cluster.nix"
+
+alias cb := cluster-build
+alias ca := cluster-apply
+alias hb := home-build
+alias hs := home-switch
+
+# run a command in the universe shell
 sh +ARGS:
   nix-shell --run "{{ARGS}}"
 
-build hostname=`hostname`:
-  #!/usr/bin/env bash
-  if [ {{os()}} == "macos" ]; then
-    nix-shell --run "home-manager -f machines/{{hostname}}/home.nix build -v"
-  else
-    # must be nixos
-    nix-shell --run "nixos-rebuild build --show-trace"
-  fi
+home-build:
+  @just _home-manager build
 
+home-switch:
+  @just _home-manager switch
+
+cluster-build:
+  @just _c build
+
+cluster-apply:
+  @just _c apply
+
+# decrypts files with git-crypt
 unlock:
-  nix-shell --run "git-crypt unlock crypt.key"
+  just sh "hack/unlock.sh"
 
-switch hostname=`hostname`:
-  #!/usr/bin/env bash
-  if [ {{os()}} == "macos" ]; then
-    nix-shell --run "home-manager -f machines/{{hostname}}/home.nix switch"
-  else
-    # must be nixos
-    sudo nix-shell --run "nixos-rebuild switch"
-  fi
+clean:
+  hack/clean.sh
 
-update-hardware-configuration hostname=`hostname`:
-  nixos-generate-config --show-hardware-config > machines/{{hostname}}/hardware/default.nix
+_home-manager goal:
+  just sh "home-manager -f $MACHINE/home.nix {{goal}}"
 
-update-ssh-keys:
-  for homie in {{homies}}; do curl https://github.com/$homie.keys -o system/ssh/keys/$homie.keys; done
+_c +ARGS="":
+  just sh "colmena -f $CLUSTER_CONFIG {{ARGS}}"
