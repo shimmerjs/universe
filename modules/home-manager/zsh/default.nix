@@ -1,5 +1,6 @@
 { pkgs, ... }:
 let
+  universe = builtins.getEnv "UNIVERSE_HOME";
   sources = import <u/nix/sources.nix>;
 in
 {
@@ -48,6 +49,11 @@ in
       CLICOLOR = 1;
       GIT_SSL_CAINFO = "${cacert}/etc/ssl/certs/ca-bundle.crt";
       BAT_THEME = "OneHalfLight";
+      # Ensures that `nix` commands are using our pinned nixpkgs modules and 
+      # expected prefixes can be resolved (e.g. <u> for this repo)
+      # TODO: this is duplicated for NixOS so that it is set properly
+      #       for nix-shell (which uses bash only)
+      NIX_PATH = "nixpkgs=${sources.nixpkgs}:home-manager=${sources.home-manager}:u=${universe}";
     };
     plugins = with sources; [
       {
