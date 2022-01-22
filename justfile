@@ -3,6 +3,7 @@ set dotenv-load
 # variables
 set export
 
+UNIVERSE_HOME := `pwd`
 HOMIE := env_var_or_default("HOMIE", `whoami`)
 HOSTNAME := `hostname`
 MACHINE := "homies/" + HOMIE + "/machines/" + HOSTNAME
@@ -34,7 +35,10 @@ unlock:
   just sh "hack/unlock.sh"
 
 clean:
-  hack/clean.sh
+  rm -rf "$DISTDIR" "$RESULTDIR"
+
+gen-homie-cfg:
+  echo "{\n\tuniverse = \"{{UNIVERSE_HOME}}\";\n}" > homie.nix
 
 _home-manager goal:
   just sh "home-manager -f $MACHINE/home.nix {{goal}}"

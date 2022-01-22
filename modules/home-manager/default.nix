@@ -9,6 +9,5 @@
     ./tools
     ./zsh
     ./git
-    ./universe.nix
   ];
 }

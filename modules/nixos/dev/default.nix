@@ -3,7 +3,6 @@
 {
   imports = [
     ./docker
-    ./universe.nix
     ./nix-path.nix
   ];
 }

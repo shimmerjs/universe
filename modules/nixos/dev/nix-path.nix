@@ -1,8 +1,7 @@
 # only explicitly set NIX_PATH on NixOS dev boxes because
 # otherwise we are applying via colmena remotely
-{ ... }:
 let
-  universe = builtins.getEnv "UNIVERSE_HOME";
+  universe = (import <u/homie.nix>).universe;
   sources = import <u/nix/sources.nix>;
 in
 {

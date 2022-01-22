@@ -7,6 +7,7 @@
   ];
 
   # i am always allow to do nix stuff on my own machines
+  # TODO: parameterize (module?)
   nix = {
     allowedUsers = [ "shimmerjs" ];
     trustedUsers = [ "root" "shimmerjs" ];

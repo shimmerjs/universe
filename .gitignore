@@ -1,3 +1,5 @@
 result
 dist
-.user.env
+
+# homie-specific static nix config
+homie.nix

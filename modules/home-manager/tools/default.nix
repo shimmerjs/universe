@@ -58,6 +58,7 @@ in
 
     # koob
     kubectl
+    kustomize
     kubectx
 
     # clout

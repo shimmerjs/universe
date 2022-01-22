@@ -23,9 +23,7 @@
       allowLocalDeployment = true;
     };
 
-    imports = [
-      ./machines/herq
-    ];
+    imports = [ ./machines/herq ];
   };
 
   slugger = { pkgs, nodes, ... }: {

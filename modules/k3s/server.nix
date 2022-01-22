@@ -23,7 +23,6 @@ with lib;
     services.k3s = {
       enable = true;
       role = "server";
-      disableAgent = true;
       extraFlags = "--node-ip ${cfg.ip} --node-external-ip ${cfg.ip} --advertise-address ${cfg.ip} --flannel-iface tailscale0";
     };
 

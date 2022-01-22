@@ -1,20 +1,17 @@
 { config, lib, pkgs, ... }:
-let
-  # k3s cluster configuration
-  cluster = import <u/modules/k3s/cluster.nix>;
-  k3sServerPath = (import <u/modules/k3s/constants.nix>).server.tokenDir;
-in
 {
   imports = [
-    ./vscode-server.nix
-    ./hardware
-    ./yubikey.nix
     <home-manager/nixos>
+
     <u/modules/nixos>
     <u/modules/nixos/dev>
     <u/modules/nixos/pass>
     <u/modules/nixos/networking/eno1.nix>
-    <u/modules/k3s/server.nix>
+
+    ./kube.nix
+    ./vscode-server.nix
+    ./hardware
+    ./yubikey.nix
   ];
 
   home-manager.users.shimmerjs = import ./home;
@@ -38,10 +35,6 @@ in
     virt-manager
   ];
 
-  services.k3s-server = {
-    ip = "100.105.221.15";
-  };
-
   users.users.shimmerjs = {
     shell = pkgs.zsh;
   };
@@ -58,11 +51,4 @@ in
       IdentitiesOnly yes
       LogLevel FATAL
   '';
-
-  system.activationScripts = {
-    # allow easier management of k3s token files 
-    k3s.text = ''
-      chown -R shimmerjs $(dirname ${k3sServerPath})
-    '';
-  };
 }
