@@ -19,7 +19,6 @@ in
     };
     shellGlobalAliases = {
       # TODO: try to put these aliases in the relevant modules
-      k = "kubectl";
       ksh = "kitty +kitten ssh";
       kcopy = "kitty +kitten clipboard";
       kpaste = "kitty +kitten clipboard --get-clipboard";
