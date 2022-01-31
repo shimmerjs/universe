@@ -12,11 +12,11 @@ in
     enableAutosuggestions = true;
     enableCompletion = true;
     initExtraBeforeCompInit = builtins.readFile ./zshrc;
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" "kubectl" ];
-      theme = "sunrise";
-    };
+    # oh-my-zsh = {
+    #   enable = true;
+    #   plugins = [ "git" "kubectl" ];
+    #   theme = "sunrise";
+    # };
     shellGlobalAliases = {
       # TODO: try to put these aliases in the relevant modules
       k = "kubectl";
