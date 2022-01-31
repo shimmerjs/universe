@@ -12,13 +12,13 @@ in
     enableAutosuggestions = true;
     enableCompletion = true;
     initExtraBeforeCompInit = builtins.readFile ./zshrc;
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ "git" "kubectl" ];
-      theme = "sunrise";
-    };
+    initExtra = ''
+      source <(kubectl completion zsh)
+      compdef __start_kubectl k
+    '';
     shellGlobalAliases = {
       # TODO: try to put these aliases in the relevant modules
+      k = "kubectl";
       ksh = "kitty +kitten ssh";
       kcopy = "kitty +kitten clipboard";
       kpaste = "kitty +kitten clipboard --get-clipboard";
