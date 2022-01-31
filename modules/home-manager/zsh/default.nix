@@ -10,6 +10,7 @@ in
   programs.zsh = with pkgs; {
     enable = true;
     enableAutosuggestions = true;
+    enableCompletion = true;
     initExtraBeforeCompInit = builtins.readFile ./zshrc;
     oh-my-zsh = {
       enable = true;
