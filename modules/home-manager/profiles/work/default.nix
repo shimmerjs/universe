@@ -5,8 +5,14 @@
     google-cloud-sdk
   ];
 
-  programs.zsh.sessionVariables = {
-    GOPRIVATE = "github.com/ncr-swt-retail,edge-infra.dev";
+  programs.zsh = {
+    dirHashes = {
+      edge = "$HOME/dev/ncr/edge-infra";
+      docs = "$HOME/dev/ncr/edge-roadmap";
+    };
+    sessionVariables = {
+      GOPRIVATE = "github.com/ncr-swt-retail,edge-infra.dev";
+    };
   };
 
   programs.git = {

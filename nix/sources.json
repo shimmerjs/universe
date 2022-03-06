@@ -60,6 +60,18 @@
         "url": "https://github.com/Atemu/home-manager/archive/e6d905336181ed8f98d48a1f6c9965b77f18e304.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "jq-zsh-plugin": {
+        "branch": "master",
+        "description": "jq zsh plugin",
+        "homepage": "",
+        "owner": "reegnz",
+        "repo": "jq-zsh-plugin",
+        "rev": "4fbb3d520892e9ab16458cb71efa12f040e5ed8b",
+        "sha256": "1pizwcsa47zyzmyrsjpyn2qhs76n5g1lgfl2f0z0bnx7qgaa19iw",
+        "type": "tarball",
+        "url": "https://github.com/reegnz/jq-zsh-plugin/archive/4fbb3d520892e9ab16458cb71efa12f040e5ed8b.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",
@@ -119,6 +131,18 @@
         "sha256": "07spp3mvkqp0grn2hwgsghrw9136i0v2rxyf8zymvdqniwlabad5",
         "type": "tarball",
         "url": "https://github.com/zsa/wally-cli/archive/5c536c2c4ca974fb83495d040e69da4a8051eaa3.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "zsh-autosuggestions": {
+        "branch": "master",
+        "description": "Fish-like autosuggestions for zsh",
+        "homepage": null,
+        "owner": "zsh-users",
+        "repo": "zsh-autosuggestions",
+        "rev": "a411ef3e0992d4839f0732ebeb9823024afaaaa8",
+        "sha256": "1g3pij5qn2j7v7jjac2a63lxd97mcsgw6xq6k5p7835q9fjiid98",
+        "type": "tarball",
+        "url": "https://github.com/zsh-users/zsh-autosuggestions/archive/a411ef3e0992d4839f0732ebeb9823024afaaaa8.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "zsh-syntax-highlighting": {

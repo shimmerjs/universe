@@ -9,6 +9,8 @@ in
 
   programs.zsh = with pkgs; {
     enable = true;
+
+    autocd = true;
     enableAutosuggestions = true;
     enableCompletion = true;
     initExtraBeforeCompInit = builtins.readFile ./zshrc;
@@ -64,6 +66,18 @@ in
         file = "powerlevel10k.zsh-theme";
         src = fetchFromGitHub {
           inherit (sources.powerlevel10k) owner repo rev sha256;
+        };
+      }
+      {
+        name = "zsh-autosuggestions";
+        src = fetchFromGitHub {
+          inherit (sources.zsh-autosuggestions) owner repo rev sha256;
+        };
+      }
+      {
+        name = "jq-zsh-plugin";
+        src = fetchFromGitHub {
+          inherit (sources.zsh-syntax-highlighting) owner repo rev sha256;
         };
       }
     ];
