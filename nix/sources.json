@@ -133,18 +133,6 @@
         "url": "https://github.com/zsa/wally-cli/archive/5c536c2c4ca974fb83495d040e69da4a8051eaa3.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
-    "zsh-autosuggestions": {
-        "branch": "master",
-        "description": "Fish-like autosuggestions for zsh",
-        "homepage": null,
-        "owner": "zsh-users",
-        "repo": "zsh-autosuggestions",
-        "rev": "a411ef3e0992d4839f0732ebeb9823024afaaaa8",
-        "sha256": "1g3pij5qn2j7v7jjac2a63lxd97mcsgw6xq6k5p7835q9fjiid98",
-        "type": "tarball",
-        "url": "https://github.com/zsh-users/zsh-autosuggestions/archive/a411ef3e0992d4839f0732ebeb9823024afaaaa8.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "zsh-syntax-highlighting": {
         "branch": "master",
         "description": "Fish shell like syntax highlighting for Zsh.",

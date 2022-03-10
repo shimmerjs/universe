@@ -22,3 +22,8 @@ export PATH="$HOME/bin:$GOBIN:$UNIVERSE_HOME/bin:$PATH"
 # - followed by go binaries
 # - followed by this repositories (universe) utils
 export PATH="$HOME/bin:$GOBIN:$UNIVERSE_HOME/bin:$PATH"
+
+# fzf powered shell history
+h() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac --height "50%" | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g')
+}

@@ -12,6 +12,7 @@
     };
     sessionVariables = {
       GOPRIVATE = "github.com/ncr-swt-retail,edge-infra.dev";
+      HOMIE = "shimmerjs";
     };
   };
 
