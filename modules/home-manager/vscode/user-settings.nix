@@ -36,6 +36,10 @@
   "[python]" = {
     "editor.formatOnSave" = true;
   };
+  "[json]" = {
+    "editor.formatOnSave" = true;
+    "editor.defaultFormatter" = "vscode.json-languange-features";
+  };
   # python (the extension) settings, dis is dumb as hell
   "python" = {
     "linting" = {
