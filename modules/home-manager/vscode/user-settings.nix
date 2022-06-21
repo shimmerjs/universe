@@ -1,6 +1,7 @@
 {
   # helps deal with explorer font size
-  "window.zoomLevel" = -1;
+  "window.zoomLevel" = 2;
+  "editor.fontSize" = 12;
 
   "workbench.colorTheme" = "Ayu Light";
 
@@ -95,10 +96,12 @@
   "workbench.editor.closeOnFileDelete" = true;
   "workbench.editor.enablePreview" = false;
   "workbench.editor.highlightModifiedTabs" = true;
+  "workbench.editor.openPositioning" = "last";
 
   "window.closeWhenEmpty" = true;
   "window.nativeTabs" = true;
 
+  # dont automatically expand tree for active files, good for big repos
   "explorer.autoReveal" = false;
 
   "editor.minimap.enabled" = false;
