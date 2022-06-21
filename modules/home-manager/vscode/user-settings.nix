@@ -1,7 +1,7 @@
 {
   # helps deal with explorer font size
   "window.zoomLevel" = 2;
-  "editor.fontSize" = 12;
+  "editor.fontSize" = 10;
 
   "workbench.colorTheme" = "Ayu Light";
 

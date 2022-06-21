@@ -17,11 +17,12 @@
         "homepage": "https://cli.github.com",
         "owner": "cli",
         "repo": "cli",
-        "rev": "a12cbe7c016ae47bc42982dbca0550848d508c6b",
-        "sha256": "0j5884x7dfzcjgs8dd4945jn6s5p2sp7v47as0d55rnrxl4d6afg",
+        "rev": "14a9af83786c15ce53f979e06a895be2f5c64f87",
+        "sha256": "1j1dm9h31np0xvhj1l558y45kag7dlnddf6nxdf1y41ylbg6qibl",
         "type": "tarball",
-        "url": "https://github.com/cli/cli/archive/a12cbe7c016ae47bc42982dbca0550848d508c6b.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+        "url": "https://github.com/cli/cli/archive/14a9af83786c15ce53f979e06a895be2f5c64f87.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "version": "v2.12.1"
     },
     "go-containerregistry": {
         "branch": "master",
