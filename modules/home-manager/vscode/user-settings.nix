@@ -1,10 +1,14 @@
 {
-  "window.zoomLevel" = 0;
+  # helps deal with explorer font size
+  "window.zoomLevel" = -1;
+
   "workbench.colorTheme" = "Ayu Light";
+
   "editor" = {
     "tabSize" = 2;
     "rulers" = [ 80 120 ];
   };
+
   "[typescript]" = {
     "editor.defaultFormatter" = "esbenp.prettier-vscode";
     "editor.formatOnSave" = true;
@@ -14,9 +18,11 @@
     };
     "updateImportsOnFileMove.enabled" = "always";
   };
+
   "[javascript]" = {
     "updateImportsOnFileMove.enabled" = "always";
   };
+
   "[markdown]" = {
     "editor.tabSize" = 4;
     "editor.formatOnSave" = true;
@@ -90,6 +96,10 @@
   "window.nativeTabs" = true;
 
   "explorer.autoReveal" = false;
+
+  "editor.minimap.enabled" = false;
+
+  "workbench.editor.closeEmtpyGroups" = false;
 
   # everything is read-only, so we dont want vscode attempting to udpate 
   # anything on its own
