@@ -50,7 +50,7 @@
       "cmd+shift+l" = "goto_tab -1";
 
       # window management
-      "cmd+s" = "launch --cwd=current";
+      "cmd+s" = "new_window_with_cwd";
       "cmd+right" = "next_window";
       "cmd+left" = "previous_window";
       "cmd+w" = "close_window";
@@ -88,4 +88,5 @@
     recursive = true;
     source = ./sessions;
   };
+  home.file.".config/kitty/ssh.conf".source = ./ssh.conf;
 }
