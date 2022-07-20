@@ -116,11 +116,12 @@
     "homepage": "",
     "owner": "romkatv",
     "repo": "powerlevel10k",
-    "rev": "b770e6a3e58f5c2238363fe63839fc808c160456",
-    "sha256": "0ny23g5ghzs3vibg3ir7dwizngwrzix19h97dl7lgqx6kx3k3z5y",
+    "rev": "8a676a9157d2b0e00e88d06456ac7317f11c0317",
+    "sha256": "0fkfh8j7rd8mkpgz6nsx4v7665d375266shl1aasdad8blgqmf0c",
     "type": "tarball",
-    "url": "https://github.com/romkatv/powerlevel10k/archive/b770e6a3e58f5c2238363fe63839fc808c160456.tar.gz",
-    "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    "url": "https://github.com/romkatv/powerlevel10k/archive/8a676a9157d2b0e00e88d06456ac7317f11c0317.tar.gz",
+    "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+    "version": "v1.16.1"
   },
   "wally-cli": {
     "branch": "master",
