@@ -103,10 +103,10 @@
     "homepage": "",
     "owner": "NixOS",
     "repo": "nixpkgs",
-    "rev": "1dd151f0c0c216f416e9553af08f724a2499c795",
-    "sha256": "14d9c178rx2q3q8x5pwa7ga9sgwm49gidlrhka8886l1mgiqba7a",
+    "rev": "a174de16edfc6aa0893530b9a95d0bd0c2a952b7",
+    "sha256": "1nl0r4nk8wdk4q31gk1xav6mlw8r53vgiz29hzy65zpwga3likfq",
     "type": "tarball",
-    "url": "https://github.com/NixOS/nixpkgs/archive/1dd151f0c0c216f416e9553af08f724a2499c795.tar.gz",
+    "url": "https://github.com/NixOS/nixpkgs/archive/a174de16edfc6aa0893530b9a95d0bd0c2a952b7.tar.gz",
     "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
     "version": "21.11"
   },
@@ -129,11 +129,12 @@
     "homepage": null,
     "owner": "zsa",
     "repo": "wally-cli",
-    "rev": "5c536c2c4ca974fb83495d040e69da4a8051eaa3",
-    "sha256": "07spp3mvkqp0grn2hwgsghrw9136i0v2rxyf8zymvdqniwlabad5",
+    "rev": "53d9020158a10ad0ffb6bc89136476f5f3a8e72b",
+    "sha256": "10b3xann4w50wsldkxkjq28iwalzin128rypizl4w8vyw1w6n8ph",
     "type": "tarball",
-    "url": "https://github.com/zsa/wally-cli/archive/5c536c2c4ca974fb83495d040e69da4a8051eaa3.tar.gz",
-    "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    "url": "https://github.com/zsa/wally-cli/archive/53d9020158a10ad0ffb6bc89136476f5f3a8e72b.tar.gz",
+    "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+    "version": "2.0.1-osx"
   },
   "zsh-syntax-highlighting": {
     "branch": "master",

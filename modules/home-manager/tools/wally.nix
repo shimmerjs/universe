@@ -1,5 +1,5 @@
 { sources ? import <u/nix/sources.nix>, pkgs ? import <u/nix> { inherit sources; } }:
-pkgs.buildGoModule rec {
+pkgs.buildGo117Module rec {
   pname = "wally-cli";
   version = "0.0.1";
 
@@ -15,7 +15,7 @@ pkgs.buildGoModule rec {
     pkg-config
   ];
 
-  vendorSha256 = "1g7xjjydag712fhq7xh08swld5bqj0g47nmisrp74r2gmqw5d468";
+  vendorSha256 = "1a18nml5z1qyrbbyfwi5rcx7zfqkpv8p4wym2lfz0w9zvlsjwr4v";
 
   meta = with pkgs.lib; {
     description = "The Flash(ing tool) CLI";

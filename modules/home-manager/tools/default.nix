@@ -46,7 +46,7 @@ in
     godef
     golint
     gocode-gomod
-    goimports
+    gotools
     golangci-lint
     # https://github.com/microsoft/vscode-remote-release/issues/648#issuecomment-503148523
     nodejs-14_x
