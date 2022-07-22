@@ -11,7 +11,9 @@ in
     <u/modules/home-manager>
     <u/modules/home-manager/ssh>
     <u/modules/home-manager/osx>
-    # TODO: move this into homies/shimmerjs
-    <u/modules/home-manager/profiles/work>
+    <u/homies/shimmerjs/profiles/work>
   ];
+
+  # set up machine specific kitty ssh-conf
+  home.file.".config/kitty/ssh.conf".source = ./ssh.conf;
 }

@@ -88,5 +88,4 @@
     recursive = true;
     source = ./sessions;
   };
-  home.file.".config/kitty/ssh.conf".source = ./ssh.conf;
 }
