@@ -10,6 +10,7 @@ in
   imports = [
     <u/modules/home-manager>
     <u/modules/home-manager/osx>
+    <u/modules/home-manager/ssh>
     <u/homies/shimmerjs/ssh.nix>
     <u/homies/shimmerjs/profiles/work>
   ];
