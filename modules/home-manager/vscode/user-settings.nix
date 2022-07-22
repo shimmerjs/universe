@@ -86,6 +86,9 @@
     "minimap" = {
       "enabled" = false;
     };
+    "bracketPairColorization" = {
+      "enabled" = false;
+    };
   };
 
   "files.autoSave" = true;

@@ -13,10 +13,16 @@
       sha256 = "08lhzhrn6p0xwi0hcyp6lj9bvpfj87vr99klzsiy8ji7621dzql3";
     }
     {
+      name = "gitlens";
+      publisher = "eamodio";
+      version = "12.1.2";
+      sha256 = "0wpmfrfpi6wl9v3dknx2qr2m74azpcw8bvhac21v67w6jxnl3jd9";
+    }
+    {
       name = "prettier-vscode";
       publisher = "esbenp";
-      version = "9.1.0";
-      sha256 = "1vfyzxaqj0bdl9cd0x6glnydbi85pf4j9fbasj2i0lfqn06l27lm";
+      version = "9.5.0";
+      sha256 = "0h5g746ij36h22v1y2883bqaphds7h1ck8mg8bywn9r723mxdy1g";
     }
     {
       name = "markdown-table-formatter";
@@ -27,20 +33,26 @@
     {
       name = "go";
       publisher = "golang";
-      version = "0.30.0";
-      sha256 = "15rmc79ad743hb6pmnzv91rkvl2fb1qwh5gk5q6n9f9vygiyjrix";
+      version = "0.35.1";
+      sha256 = "0n7jzns44sv8xzkvs3bp753605gv3sps0l16br8cm4cj38bjnx1h";
     }
     {
       name = "nix-ide";
       publisher = "jnoortheen";
-      version = "0.1.19";
-      sha256 = "1ms96ij6z4bysdhqgdaxx2znvczyhzx57iifbqws50m1c3m7pkx7";
+      version = "0.1.20";
+      sha256 = "16mmivdssjky11gmih7zp99d41m09r0ii43n17d4i6xwivagi9a3";
     }
     {
       name = "python";
       publisher = "ms-python";
-      version = "2021.12.1559732655";
-      sha256 = "0ghwj1n57zgfqnlwdxy18ahkljixv6dd2810rzw6vfqvp1kxax45";
+      version = "2022.11.12021011";
+      sha256 = "0h1caw8gj7apjq70v1saixy6sxi8aa5awjn67ckmvfaidbnyzd2q";
+    }
+    {
+      name = "Theme-TomorrowKit";
+      publisher = "ms-vscode";
+      version = "0.1.4";
+      sha256 = "0rrfpwsf2v8mra102b9wjg3wzwpxjlsk0p75g748my54cqjk1ad9";
     }
     {
       name = "just";

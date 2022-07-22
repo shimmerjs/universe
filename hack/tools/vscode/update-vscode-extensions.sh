@@ -6,4 +6,4 @@
 
 set -eu
 
-"$(dirname "${BASH_SOURCE[0]}")/gen-vscode-extensions.sh" | tee "$UNIVERSE_HOME/home/vscode/extensions.nix"
+"$(dirname "${BASH_SOURCE[0]}")/gen-vscode-extensions.sh" | tee "$UNIVERSE_HOME/modules/home-manager/vscode/extensions.nix"
