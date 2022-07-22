@@ -1,0 +1,7 @@
+[credential "https://github.com"]
+        helper = # intentionally blank
+        helper = !$(which gh) auth git-credential
+        username = ss185994
+
+[user]
+  email = "ss185994@ncr.com"

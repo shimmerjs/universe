@@ -12,7 +12,7 @@ pkgs.buildGoModule rec {
 
   subPackages = [ "cmd/gh" ];
 
-  vendorSha256 = "0llxx9pm4xxiqf1pbqnwdh2s2r733kdkcqqk9m8q59bclqwmswpr";
+  vendorSha256 = "1idlp0ns9ss6j3vm8qycm22ri33na9r5xvqvmyygakxkms7q7zvb";
 
   meta = with pkgs.lib; {
     description = "Join GitHub in taking over the free world.";
