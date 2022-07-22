@@ -25,7 +25,6 @@ in
     };
   };
 
-  # TODO: clean up, this is duped from home/git/ncr
   home.file.".config/git/workgitconfig".text = builtins.readFile ./gitconfig;
   home.packages = with pkgs; [
     # clout
