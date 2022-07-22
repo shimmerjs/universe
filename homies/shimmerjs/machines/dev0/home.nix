@@ -11,6 +11,7 @@ in
     <u/modules/home-manager>
   ];
 
+  # duped some stuff from profiles/work/...
   programs.zsh.sessionVariables = {
     GOPRIVATE = "github.com/ncr-swt-retail,edge-infra.dev";
   };
@@ -23,7 +24,6 @@ in
       };
     };
   };
-
 
   # TODO: clean up, this is duped from home/git/ncr
   home.file.".config/git/workgitconfig".text = builtins.readFile ./gitconfig;
