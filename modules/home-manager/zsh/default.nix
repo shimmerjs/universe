@@ -41,6 +41,7 @@ in
     history = {
       save = 1000000000;
       size = 1000000000;
+      share = true;
     };
     sessionVariables = {
       HYPHEN_INSENSITIVE = "true";
