@@ -26,6 +26,7 @@ in
     tree
     pandoc
     graphviz # a picture is worth a thousand words
+    git-quick-stats
 
     # text editors
     vim
