@@ -26,6 +26,7 @@ in
     tree
     pandoc
     graphviz # a picture is worth a thousand words
+    asciinema # a movie must be worth a trilly
     git-quick-stats
 
     # text editors

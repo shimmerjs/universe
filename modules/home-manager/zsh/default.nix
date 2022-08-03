@@ -34,6 +34,8 @@ in
       # for terminal friendly graphs
       idot = "tdot | icat";
       batdiff = "git diff --name-only --diff-filter=d | xargs bat --diff";
+      # for pretty-fying streams of mixed garbage that contain JSON objects 
+      jqmess = "jq -R 'fromjson? | .'";
     };
     shellAliases = {
       ls = "ls -A --color=auto";

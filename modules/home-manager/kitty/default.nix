@@ -8,12 +8,18 @@
       # editor
       editor = "code --wait";
 
+      # osx behavior
+      macos_quit_when_last_window_closed = "yes";
+
       # style
       tab_bar_margin_width = "5.0";
       tab_bar_style = "powerline";
 
-      macos_thicken_font = "0.50";
+      window_border_width = "0.75pt";
+
+      macos_thicken_font = "0.40";
       macos_show_window_title_in = "none";
+      macos_colorspace = "default";
 
       font_size = "16.0";
 
@@ -31,7 +37,7 @@
       # sessions
       startup_session = "sessions/default.conf";
 
-      enabled_layouts = "vertical";
+      enabled_layouts = "fat:bias=70;full_size=1,tall:bias=70;full_size=1";
 
       # clipboard control, enable reading from clipboard
       clipboard_control = "write-clipboard read-clipboard write-primary read-primary";
@@ -47,7 +53,6 @@
       "cmd+shift+4" = "goto_tab 4";
       "cmd+shift+5" = "goto_tab 5";
       "cmd+shift+6" = "goto_tab 6";
-      "cmd+shift+l" = "goto_tab -1";
 
       # window management
       "cmd+s" = "new_window_with_cwd";
@@ -61,6 +66,9 @@
       "cmd+5" = "fifth_window";
       "cmd+6" = "sixth_window";
 
+      # layouts
+      "cmd+shift+l" = "next_layout";
+
       # font sizes
       "cmd+equal" = "change_font_size current + 2.0";
       "cmd+shift+equal" = "change_font_size all + 2.0";
@@ -71,7 +79,6 @@
       "cmd+shift+h" = "show_scrollback";
 
       # reset terminal
-      "cmd+r" = "clear_terminal reset active";
       "cmd+k" = "clear_terminal clear active";
       "ctrl+k" = "clear + terminal scroll active";
     };
