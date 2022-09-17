@@ -42,7 +42,7 @@ in
 
     # languages
     yarn
-    go_1_17
+    go_1_18
     gopls
     gopkgs
     godef
