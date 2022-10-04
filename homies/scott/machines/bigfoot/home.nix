@@ -11,7 +11,7 @@ in
     <u/modules/home-manager>
     <u/modules/home-manager/ssh>
     <u/modules/home-manager/osx>
-    # TODO: move this into homies/scott
     <u/homies/scott/profiles/work>
+    <u/homies/scott/ssh.nix>
   ];
 }
