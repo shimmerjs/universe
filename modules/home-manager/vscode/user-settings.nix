@@ -76,7 +76,11 @@
   "window.zoomLevel" = 1.5;
 
   # color theme
-  "workbench.colorTheme" = "Ayu Light";
+  # auto detect from OS preference 
+  # controversial ???
+  "workbench.preferredLightColorTheme" = "Ayu Light";
+  "workbench.preferredDarkColorTheme" = "Ayu Mirage";
+  "window.autoDetectColorScheme" = true;
 
   "editor" = {
     "tabSize" = 2;
