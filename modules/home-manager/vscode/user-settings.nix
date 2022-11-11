@@ -24,6 +24,14 @@
     };
     "updateImportsOnFileMove.enabled" = "always";
   };
+  "[html]" = {
+    "editor.formatOnSave" = true;
+    "editor.defaultFormatter" = "esbenp.prettier-vscode";
+  };
+  "[css]" = {
+    "editor.formatOnSave" = true;
+    "editor.defaultFormatter" = "esbenp.prettier-vscode";
+  };
   "[javascript]" = {
     "updateImportsOnFileMove.enabled" = "always";
   };
