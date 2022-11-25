@@ -1,10 +1,4 @@
 { pkgs, ... }:
-let
-  # go binaries
-  github-cli = import ./github-cli.nix { };
-  wally-cli = import ./wally.nix { };
-  crane = import ./crane.nix { };
-in
 {
   home.packages = with pkgs; [
     # tools that are pulled from nixpkgs
@@ -66,9 +60,10 @@ in
     # clout
     google-cloud-sdk
 
-    # tools i maintain the package defs for
-    github-cli
-    wally-cli # for flashing firmware to my ergoxo
-    crane
+    # flash keyboard changes
+    # see TODO in wally.nix
+    # wally-cli
+
+    gh # github cli
   ];
 }

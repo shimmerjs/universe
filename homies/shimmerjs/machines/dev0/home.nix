@@ -9,9 +9,12 @@ in
 {
   imports = [
     <u/modules/home-manager>
+    <u/homies/shimmerjs/home-manager.nix>
   ];
 
   # duped some stuff from profiles/work/...
+  # TODO: can't just import homies/shimmerjs/profiles/work bc of difference in 
+  #       git config
   programs.zsh.sessionVariables = {
     GOPRIVATE = "github.com/ncr-swt-retail,edge-infra.dev";
   };

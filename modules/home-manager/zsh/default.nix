@@ -11,11 +11,8 @@ in
     enable = true;
     enableAutosuggestions = true;
     enableCompletion = true;
-    initExtraBeforeCompInit = builtins.readFile ./zshrc;
-    initExtra = ''
-      source <(kubectl completion zsh)
-      compdef __start_kubectl k
-    '';
+    enableSyntaxHighlighting = true;
+    initExtra = builtins.readFile ./zshrc;
     shellGlobalAliases = {
       # TODO: try to put these aliases in the relevant modules
       k = "kubectl";
@@ -43,6 +40,8 @@ in
       save = 1000000000;
       size = 1000000000;
       share = true;
+      ignoreSpace = true;
+      ignoreDups = true;
     };
     sessionVariables = {
       HYPHEN_INSENSITIVE = "true";
@@ -57,22 +56,10 @@ in
     };
     plugins = with sources; [
       {
-        name = "zsh-syntax-highlighting";
-        src = fetchFromGitHub {
-          inherit (sources.zsh-syntax-highlighting) owner repo rev sha256;
-        };
-      }
-      {
         name = "powerlevel10k";
         file = "powerlevel10k.zsh-theme";
         src = fetchFromGitHub {
           inherit (sources.powerlevel10k) owner repo rev sha256;
-        };
-      }
-      {
-        name = "jq-zsh-plugin";
-        src = fetchFromGitHub {
-          inherit (sources.zsh-syntax-highlighting) owner repo rev sha256;
         };
       }
     ];
