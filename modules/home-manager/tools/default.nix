@@ -2,7 +2,6 @@
 let
   # go binaries
   github-cli = import ./github-cli.nix { };
-  wally-cli = import ./wally.nix { };
   crane = import ./crane.nix { };
 in
 {
@@ -68,7 +67,6 @@ in
 
     # tools i maintain the package defs for
     github-cli
-    wally-cli # for flashing firmware to my ergoxo
     crane
   ];
 }
