@@ -12,11 +12,7 @@ in
     enableAutosuggestions = true;
     enableCompletion = true;
     enableSyntaxHighlighting = true;
-    initExtraBeforeCompInit = builtins.readFile ./zshrc;
-    initExtra = ''
-      source <(kubectl completion zsh)
-      compdef __start_kubectl k
-    '';
+    initExtra = builtins.readFile ./zshrc;
     shellGlobalAliases = {
       # TODO: try to put these aliases in the relevant modules
       k = "kubectl";
@@ -44,6 +40,8 @@ in
       save = 1000000000;
       size = 1000000000;
       share = true;
+      ignoreSpace = true;
+      ignoreDups = true;
     };
     sessionVariables = {
       HYPHEN_INSENSITIVE = "true";

@@ -5,8 +5,6 @@ let
   sources = import <u/nix/sources.nix>;
   # import niv-managed pkgs overlay
   pkgs = import <u/nix> { inherit sources; };
-  # import custom build definition for wally-cli
-  wally-cli = import ./wally.nix { };
 in
 {
   imports = [
@@ -16,10 +14,6 @@ in
     <u/homies/shimmerjs/home-manager.nix>
     <u/homies/shimmerjs/ssh.nix>
     <u/homies/shimmerjs/profiles/work>
-  ];
-
-  home.packages = with pkgs; [
-    wally-cli
   ];
 
   # set up machine specific kitty ssh-conf

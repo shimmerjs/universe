@@ -1,5 +1,6 @@
+# TODO: create fork of wally-cli that upgrades golang.org/x/sys to fix linkmode errors
 { sources ? import <u/nix/sources.nix>, pkgs ? import <u/nix> { inherit sources; } }:
-pkgs.buildGo117Module rec {
+pkgs.buildGoModule rec {
   pname = "wally-cli";
   version = "0.0.1";
 

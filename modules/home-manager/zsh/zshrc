@@ -10,6 +10,10 @@ fi
 export DISABLE_AUTO_TITLE="true"
 precmd () {print -Pn "\e]0;%~\a"}
 
+# kubectl autocomplete
+source <(kubectl completion zsh)
+compdef __start_kubectl k
+
 # brolang config
 export GO111MODULE="on"
 # set these explicitly so they are available to shell scripts
