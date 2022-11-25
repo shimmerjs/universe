@@ -11,6 +11,7 @@ in
     enable = true;
     enableAutosuggestions = true;
     enableCompletion = true;
+    enableSyntaxHighlighting = true;
     initExtraBeforeCompInit = builtins.readFile ./zshrc;
     initExtra = ''
       source <(kubectl completion zsh)
@@ -57,22 +58,10 @@ in
     };
     plugins = with sources; [
       {
-        name = "zsh-syntax-highlighting";
-        src = fetchFromGitHub {
-          inherit (sources.zsh-syntax-highlighting) owner repo rev sha256;
-        };
-      }
-      {
         name = "powerlevel10k";
         file = "powerlevel10k.zsh-theme";
         src = fetchFromGitHub {
           inherit (sources.powerlevel10k) owner repo rev sha256;
-        };
-      }
-      {
-        name = "jq-zsh-plugin";
-        src = fetchFromGitHub {
-          inherit (sources.zsh-syntax-highlighting) owner repo rev sha256;
         };
       }
     ];
