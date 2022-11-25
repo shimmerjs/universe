@@ -1,9 +1,4 @@
 { pkgs, ... }:
-let
-  # go binaries
-  github-cli = import ./github-cli.nix { };
-  crane = import ./crane.nix { };
-in
 {
   home.packages = with pkgs; [
     # tools that are pulled from nixpkgs
@@ -65,8 +60,6 @@ in
     # clout
     google-cloud-sdk
 
-    # tools i maintain the package defs for
-    github-cli
-    crane
+    gh # github cli
   ];
 }
