@@ -11,7 +11,7 @@ source .env
 BUILDER_UNIVERSE_HOME="/home/shimmerjs/dev/universe"
 BUILDER="herq"
 HOSTNAME="$2"
-ISO_DIR="$DISTDIR/nixos-pi-iso"
+ISO_DIR="$DISTDIR/nixos-iso"
 ZST_FILE="$ISO_DIR/$HOSTNAME.zst"
 IMG_FILE="$ISO_DIR/$HOSTNAME.img"
 

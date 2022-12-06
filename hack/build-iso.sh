@@ -8,6 +8,9 @@
 # for first boot + tailscale registration
 
 set -eu
+
+pushd "$UNIVERSE_HOME"
+
 source .env
 
 TYPE="${1:-standard}"
@@ -35,7 +38,6 @@ CMD="export HOSTNAME=$ISO_HOSTNAME; $CMD --out-link $DISTDIR/$ISO_HOSTNAME"
 
 echo "$CMD"
 
-pushd "$UNIVERSE_HOME"
 mkdir -p $DISTDIR
 nix-shell --run "$CMD"
 popd
