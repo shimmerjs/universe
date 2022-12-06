@@ -8,6 +8,11 @@
     ./colmena.nix
   ];
 
+  # shouldn't be needed, but still having issues on
+  # nixos hosts?
+  # https://github.com/nix-community/home-manager/issues/3342
+  manual.manpages.enable = false;
+
   home.packages = with pkgs; [
     ssh-import-id
   ];

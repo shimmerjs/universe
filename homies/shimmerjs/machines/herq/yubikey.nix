@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     yubikey-personalization
     yubikey-personalization-gui
-    yubioath-desktop
+    yubioath-flutter
     yubico-pam
   ];
 

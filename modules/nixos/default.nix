@@ -8,9 +8,11 @@
 
   # i am always allow to do nix stuff on my own machines
   # TODO: parameterize (module?)
-  settings = {
-    allowed-users = [ "shimmerjs" ];
-    trusted-users = [ "root" "shimmerjs" ];
+  nix = {
+    settings = {
+      allowed-users = [ "shimmerjs" ];
+      trusted-users = [ "root" "shimmerjs" ];
+    };
   };
 
   time.timeZone = "America/New_York";
