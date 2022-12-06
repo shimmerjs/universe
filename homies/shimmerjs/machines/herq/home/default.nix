@@ -8,6 +8,8 @@
     ./colmena.nix
   ];
 
+  manual.manpages.enable = false;
+
   home.packages = with pkgs; [
     ssh-import-id
   ];
