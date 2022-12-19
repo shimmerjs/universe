@@ -11,6 +11,14 @@
         HostName 107.13.151.122
         Port 32419
         User scott
+
+      Host kraken
+        HostName 192.168.1.145
+        User scott
+
+      Host pi
+        HostName 192.168.1.194
+        User pi
     '';
   };
 }

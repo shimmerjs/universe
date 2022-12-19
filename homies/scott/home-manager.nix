@@ -7,7 +7,7 @@
   # makes the value of $USER incorrect.  I use scott across all non-OSX boxes
   home.username = if pkgs.stdenv.isDarwin then builtins.getEnv "USER" else "scott";
   home.homeDirectory = if pkgs.stdenv.isDarwin then builtins.getEnv "HOME" else "/home/scott";
-  home.stateVersion = "21.03";
+  home.stateVersion = "22.05";
 
   # git identity
   programs.git = {
