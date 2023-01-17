@@ -57,9 +57,6 @@
     kustomize
     kubectx
 
-    # clout
-    google-cloud-sdk
-
     # flash keyboard changes
     # see TODO in wally.nix
     # wally-cli
