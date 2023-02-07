@@ -48,11 +48,11 @@
     services.k3s-agent.ip = "100.105.232.41";
   };
 
-  creep = { pkgs, nodes, ... }: {
-    deployment.tags = [ "rpi" ];
-    imports = [ <u/modules/rpi/k3s-agent.nix> ];
-    services.k3s-agent.ip = "100.126.139.25";
-  };
+  # creep = { pkgs, nodes, ... }: {
+  #   deployment.tags = [ "rpi" ];
+  #   imports = [ <u/modules/rpi/k3s-agent.nix> ];
+  #   services.k3s-agent.ip = "100.126.139.25";
+  # };
 
   bishop = { pkgs, nodes, ... }: {
     deployment.tags = [ "rpi" ];
