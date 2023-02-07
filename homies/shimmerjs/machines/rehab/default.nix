@@ -8,8 +8,6 @@ in
 {
   imports = [
     <u/modules/nixos>
-    <u/modules/nixos/pass>
-    <u/modules/nixos/networking/eno1.nix>
 
     # ./kube.nix
     ./hardware
@@ -29,8 +27,4 @@ in
   users.users.shimmerjs = {
     shell = pkgs.zsh;
   };
-
-  environment.systemPackages = with pkgs; [
-    gitAndTools.git-crypt
-  ];
 }

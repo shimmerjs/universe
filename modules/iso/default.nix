@@ -6,11 +6,19 @@
     # Provide an initial copy of the NixOS channel so that the user
     # doesn't need to run "nix-channel --update" first.
     <nixpkgs/nixos/modules/installer/cd-dvd/channel.nix>
+
+    # passwordless root on image
+    <u/modules/nixos/security/sudo.nix>
+    # root ssh key setup for installation
+    <u/modules/nixos/ssh/root.nix>
+    # include tailscale config so that we can register the 
+    # node with our mesh during bootstrapping
+    <u/modules/nixos/networking>
+    <u/modules/nixos/networking/eno1.nix>
   ];
 
   # Enable SSH in the boot process.
   systemd.services.sshd.wantedBy = pkgs.lib.mkForce [ "multi-user.target" ];
-  users.users.root.openssh.authorizedKeys.keys = [
-    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD7aNBkcQK8pOMhsFpDmY8kkI+jxnwqgark6GImy6Ze4P2+yOyoT7uMbf+KLGOU5VX5etaRCN4ZyArWJz4UtTIuoL8tda00RKW0e8EDvlYI/d7eAs9EHih1uqZCPQZjwdEnB94VI4UG/9VDHTSUO4aI+b7Hnu4q0YaWt+hvB+GKK9v6iTRy6mErjeBBUn8a6XxZgFycdNZinPwBUfr2kB3pmTp2U55lm3zN66wOhGl4Ap9mY2rX0OyA3z8SThetnMLcNqmZ0jyS7vTptCf8ZejS06GTnIR9DiTTbASG8mexudbVj6erZXgyRXb9vqUAzOcGzzzigp8jel9Wws7L1X+B shimmerjs@overlook"
-  ];
+
+  networking.hostName = builtins.getEnv "HOSTNAME";
 }

@@ -20,6 +20,9 @@ in
     ./yubikey.nix
   ];
 
+  # shouldn't use this? doesnt seem to work for older x86 board
+  networking.useDHCP = false;
+
   home-manager.users.shimmerjs = import ./home;
 
   # pretty sure this is going to be true for all my nixos boxes
