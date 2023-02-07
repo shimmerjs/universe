@@ -27,23 +27,24 @@
   };
 
   rehab = { pkgs, nodes, ... }: {
+    deployment.tags = [ "k3s-server" ];
     imports = [ ./machines/rehab ];
   };
 
   slugger = { pkgs, nodes, ... }: {
-    deployment.tags = [ "rpi" ];
+    deployment.tags = [ "rpi" "k3s-agent" ];
     imports = [ <u/modules/rpi/k3s-agent.nix> ];
     services.k3s-agent.ip = "100.65.65.64";
   };
 
   snake = { pkgs, nodes, ... }: {
-    deployment.tags = [ "rpi" ];
+    deployment.tags = [ "rpi" "k3s-agent" ];
     imports = [ <u/modules/rpi/k3s-agent.nix> ];
     services.k3s-agent.ip = "100.115.61.75";
   };
 
   eloise = { pkgs, nodes, ... }: {
-    deployment.tags = [ "rpi" ];
+    deployment.tags = [ "rpi" "k3s-agent" ];
     imports = [ <u/modules/rpi/k3s-agent.nix> ];
     services.k3s-agent.ip = "100.105.232.41";
   };
@@ -55,7 +56,7 @@
   # };
 
   bishop = { pkgs, nodes, ... }: {
-    deployment.tags = [ "rpi" ];
+    deployment.tags = [ "rpi" "k3s-agent" ];
     imports = [ <u/modules/rpi/k3s-agent.nix> ];
     services.k3s-agent.ip = "100.77.146.43";
   };

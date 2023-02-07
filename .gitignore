@@ -1,5 +1,6 @@
 result
 dist
+secrets
 
 # homie-specific static nix config
 homie.nix

@@ -6,7 +6,7 @@ let
 in
 {
   deployment = {
-    tags = [ "rpi" ];
+    tags = [ "k3s-agent" ];
     keys = {
       "node-token" = {
         keyFile = constants.server.tokenFile;
