@@ -9,7 +9,8 @@ in
     tags = [ "k3s-agent" ];
     keys = {
       "node-token" = {
-        keyFile = constants.server.tokenFile;
+        # TODO: better path
+        keyFile = "/home/shimmerjs/dev/universe/secrets/rehab-server-node-token";
 
         destDir = constants.agent.tokenDir;
 
