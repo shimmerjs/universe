@@ -9,7 +9,7 @@ in
   ];
 
   services.k3s-server = {
-    ip = "100.105.221.15";
+    ip = "100.105.221.15"; # update IP
   };
 
   # honor existing KUBECONFIG and add the servers config

@@ -26,6 +26,12 @@
     imports = [ ./machines/herq ];
   };
 
+  rehab = { pkgs, nodes, ... }: {
+    deployment.targetHost = "192.168.1.83";
+    deployment.targetUser = "root";
+    imports = [ ./machines/rehab ];
+  };
+
   slugger = { pkgs, nodes, ... }: {
     deployment.tags = [ "rpi" ];
     imports = [ <u/modules/rpi/k3s-agent.nix> ];
