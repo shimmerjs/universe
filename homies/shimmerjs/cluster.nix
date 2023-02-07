@@ -10,7 +10,7 @@
       # otherwise colmena will attempt to use root, which we dont like
       # TODO: docs indicate it should use active user, maybe updating colmena 
       #       will fix
-      # targetUser = "shimmerjs";
+      targetUser = "shimmerjs";
     };
 
     networking.hostName = name;
@@ -28,7 +28,6 @@
 
   rehab = { pkgs, nodes, ... }: {
     deployment.targetHost = "192.168.1.83";
-    deployment.targetUser = "root";
     imports = [ ./machines/rehab ];
   };
 
