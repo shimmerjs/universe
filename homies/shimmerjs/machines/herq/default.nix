@@ -14,7 +14,6 @@ in
     <u/modules/nixos/pass>
     <u/modules/nixos/networking/eno1.nix>
 
-    ./kube.nix
     ./vscode-server.nix
     ./hardware
     ./yubikey.nix

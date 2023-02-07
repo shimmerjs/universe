@@ -9,7 +9,7 @@ in
   imports = [
     <u/modules/nixos>
 
-    # ./kube.nix
+    ./kube.nix
     ./hardware
   ];
 

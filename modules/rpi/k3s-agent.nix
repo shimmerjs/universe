@@ -9,6 +9,6 @@
   ];
 
   services.k3s-agent = {
-    server = nodes.herq.config.services.k3s-server.ip;
+    server = nodes.rehab.config.services.k3s-server.ip;
   };
 }

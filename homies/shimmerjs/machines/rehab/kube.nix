@@ -1,7 +1,6 @@
 { pkgs, ... }:
 let
   k3sServerPath = (import <u/modules/k3s/constants.nix>).server.tokenDir;
-  minioRootCredsFile = "/etc/minio/root-creds-dont-look";
 in
 {
   imports = [
@@ -9,7 +8,7 @@ in
   ];
 
   services.k3s-server = {
-    ip = "100.105.221.15"; # update IP
+    ip = "100.70.218.28";
   };
 
   # honor existing KUBECONFIG and add the servers config
@@ -21,7 +20,6 @@ in
     # allow easier management of k3s token files 
     k3s.text = ''
       chown -R shimmerjs $(dirname ${k3sServerPath})
-      chown -R shimmerjs $(dirname ${minioRootCredsFile})
     '';
   };
 }

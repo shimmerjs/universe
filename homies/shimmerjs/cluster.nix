@@ -27,7 +27,6 @@
   };
 
   rehab = { pkgs, nodes, ... }: {
-    deployment.targetHost = "192.168.1.83";
     imports = [ ./machines/rehab ];
   };
 
