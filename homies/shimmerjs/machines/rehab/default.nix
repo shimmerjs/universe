@@ -22,7 +22,6 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.loader.grub.device = "/dev/disk/by-uuid/173C-EF92";
   boot.kernel.sysctl = {
     "fs.inotify.max_user_watches" = "1048576";
   };
