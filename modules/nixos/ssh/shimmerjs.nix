@@ -6,4 +6,10 @@
       (builtins.readFile ./keys/booninite.keys)
     ];
   };
+
+  users.users.nateph = {
+    openssh.authorizedKeys.keys = [
+      (builtins.readFile ./keys/n8-key)
+    ];
+  };
 }
