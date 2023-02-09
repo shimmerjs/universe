@@ -91,10 +91,10 @@
         "homepage": null,
         "owner": "msteen",
         "repo": "nixos-vscode-server",
-        "rev": "bc28cc2a7d866b32a8358c6ad61bea68a618a3f5",
-        "sha256": "00aqwrr6bgvkz9bminval7waxjamb792c0bz894ap8ciqawkdgxp",
+        "rev": "abc8f1d59c0ea54cc7317f5f3937febea7540c60",
+        "sha256": "1lp04as15ni1hirfj729hcn6b5ylpn46xycqi2zp844byj495n81",
         "type": "tarball",
-        "url": "https://github.com/msteen/nixos-vscode-server/archive/bc28cc2a7d866b32a8358c6ad61bea68a618a3f5.tar.gz",
+        "url": "https://github.com/msteen/nixos-vscode-server/archive/abc8f1d59c0ea54cc7317f5f3937febea7540c60.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {

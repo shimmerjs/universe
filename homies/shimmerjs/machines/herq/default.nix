@@ -12,15 +12,16 @@ in
     <u/modules/nixos>
     <u/modules/nixos/dev>
     <u/modules/nixos/pass>
-    <u/modules/nixos/networking/eno1.nix>
 
     ./vscode-server.nix
+    ./container-registry.nix
     ./hardware
     ./yubikey.nix
   ];
 
   # shouldn't use this? doesnt seem to work for older x86 board
   networking.useDHCP = false;
+  networking.interfaces.eno1.useDHCP = true;
 
   home-manager.users.shimmerjs = import ./home;
 

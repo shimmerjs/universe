@@ -45,7 +45,7 @@
     gotools
     golangci-lint
     # https://github.com/microsoft/vscode-remote-release/issues/648#issuecomment-503148523
-    nodejs-14_x
+    nodejs-18_x
     nixpkgs-fmt
     (python3.withPackages
       # install pip because its not included with the python3 nixpkg by

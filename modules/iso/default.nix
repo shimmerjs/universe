@@ -14,7 +14,6 @@
     # include tailscale config so that we can register the 
     # node with our mesh during bootstrapping
     <u/modules/nixos/networking>
-    <u/modules/nixos/networking/eno1.nix>
   ];
 
   # Enable SSH in the boot process.
