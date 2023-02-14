@@ -34,7 +34,7 @@ with lib;
       role = "agent";
       serverAddr = "https://${cfg.server}:6443";
       tokenFile = (import ./constants.nix).agent.tokenFile;
-      extraFlags = "--node-ip ${cfg.ip} --node-external-ip ${cfg.ip} --flannel-iface tailscale0";
+      extraFlags = "--node-ip ${cfg.ip} --node-external-ip ${cfg.ip} --flannel-iface tailscale0 --flannel-backend=host-gw";
     };
 
     environment.systemPackages = [ pkgs.k3s ];
