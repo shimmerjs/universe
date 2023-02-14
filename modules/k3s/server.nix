@@ -23,7 +23,7 @@ with lib;
     services.k3s = {
       enable = true;
       role = "server";
-      extraFlags = "--node-ip ${cfg.ip} --node-external-ip ${cfg.ip} --advertise-address ${cfg.ip} --flannel-iface tailscale0";
+      extraFlags = "--node-ip ${cfg.ip} --node-external-ip ${cfg.ip} --advertise-address ${cfg.ip} --flannel-iface tailscale0 --flannel-backend=host-gw";
     };
 
     environment.systemPackages = [ pkgs.k3s ];
