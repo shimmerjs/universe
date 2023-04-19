@@ -26,12 +26,13 @@
   { key = "cmd+7"; command = "workbench.action.openEditorAtIndex7"; }
   { key = "cmd+8"; command = "workbench.action.openEditorAtIndex8"; }
   { key = "cmd+9"; command = "workbench.action.openEditorAtIndex9"; }
-  { key = "shift+cmd+["; command = "workbench.action.previousEditor"; }
-  { key = "shift+cmd+]"; command = "workbench.action.nextEditor"; }
+  { key = "cmd+["; command = "workbench.action.previousEditor"; }
+  { key = "cmd+]"; command = "workbench.action.nextEditor"; }
   # editor groups
   { key = "cmd+shift+1"; command = "workbench.action.focusFirstEditorGroup"; when = "editorFocus"; }
   { key = "cmd+shift+2"; command = "workbench.action.focusSecondEditorGroup"; when = "editorFocus"; }
   { key = "cmd+shift+3"; command = "workbench.action.focusThirdEditorGroup"; when = "editorFocus"; }
+  { key = "cmd+shift+4"; command = "workbench.action.focusFourthEditorGroup"; when = "editorFocus"; }
 
   # sidebar
   { key = "cmd+b"; command = "workbench.action.toggleSidebarVisibility"; }
@@ -49,7 +50,7 @@
   # default on OSX
   { key = "cmd+/"; command = "editor.action.commentLine"; when = "editorTextFocus && !editorReadonly"; }
   { key = "cmd+l"; command = "expandLineSelection"; when = "editorFocus"; }
-  { key = "cmd+shift+l"; command = "editor.action.insertCursorAtEndOfEachLineSelected"; when = "editorTextFocus"; }
+  { key = "cmd+shift+a"; command = "editor.action.insertCursorAtEndOfEachLineSelected"; when = "editorTextFocus"; }
   { key = "cmd+j"; command = "editor.action.joinLines"; when = "editorTextFocus"; }
 
   # random shit leftover from converting the sublime bindings that i dont 
