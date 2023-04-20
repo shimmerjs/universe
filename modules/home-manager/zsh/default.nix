@@ -44,7 +44,7 @@ in
       ignoreDups = true;
     };
     sessionVariables = {
-      USE_GKE_GCLOUD_AUTH_PLUGIN = "true";
+      USE_GKE_GCLOUD_AUTH_PLUGIN = "True";
       HYPHEN_INSENSITIVE = "true";
       DISABLE_AUTO_UPDATE = "true";
       COMPLETION_WAITING_DOTS = "false";
