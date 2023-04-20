@@ -13,6 +13,7 @@ alias cb := cluster-build
 alias ca := cluster-apply
 alias hb := home-build
 alias hs := home-switch
+alias hbs := home-backup-switch
 
 # run a command in the universe shell
 sh +ARGS:
@@ -23,6 +24,9 @@ home-build:
 
 home-switch:
   @just _home-manager switch
+
+home-backup-switch:
+  @just _home-manager-bkp switch
 
 cluster-build:
   @just _c build
@@ -42,6 +46,9 @@ gen-homie-cfg:
 
 _home-manager goal:
   just sh "home-manager -f $MACHINE/home.nix {{goal}}"
+
+_home-manager-bkp goal:
+  just sh "home-manager -b backup -f $MACHINE/home.nix {{goal}}"
 
 _c +ARGS="":
   just sh "colmena -f $CLUSTER_CONFIG {{ARGS}}"
