@@ -20,6 +20,7 @@
     tree
     pandoc
     graphviz # a picture is worth a thousand words
+    d2 # a picture is worth a thousand words v2
     asciinema # a movie must be worth a trilly
     git-quick-stats
 

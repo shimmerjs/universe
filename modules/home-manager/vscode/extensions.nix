@@ -20,14 +20,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.4.1805";
-    sha256 = "1r5jwib3qbvk0w7wlm8api1s4fyy8hkv7wl8mbjr69gszs1ky43w";
+    version = "2023.4.2605";
+    sha256 = "0wjjkwqy66dn05973qwgnicvm92lc3g2awfpdsly6j4xjcrfwax3";
   }
   {
     name = "prettier-vscode";
     publisher = "esbenp";
-    version = "9.10.4";
-    sha256 = "0br00867d2p0d7fjw8ska3anz16rfyhh3b2i6fpfi6qv8h3p46wj";
+    version = "9.12.0";
+    sha256 = "0nplxds28f9s3ny0xg2w6h6gsq5nfa5x7292hxm00radh9himcbg";
   }
   {
     name = "markdown-table-formatter";
@@ -50,8 +50,8 @@
   {
     name = "python";
     publisher = "ms-python";
-    version = "2023.7.11091004";
-    sha256 = "0di5mg3ilc1f5rzq9irg04cf7swp5vvgd5g0zi6zjn2r9p8cz9x1";
+    version = "2023.7.11161005";
+    sha256 = "1ndccd1q8l41p3vwv2n722qghy5p9aig243px3cs1v95416j19r8";
   }
   {
     name = "Theme-TomorrowKit";
