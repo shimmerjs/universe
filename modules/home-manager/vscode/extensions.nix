@@ -71,5 +71,11 @@
     version = "1.0.5";
     sha256 = "1visv44mizfvsysrdby1vrncv1g3qmf45rhjijmbyak2d60nm0gq";
   }
+  {
+    name = "d2";
+    publisher = "Terrastruct";
+    version = "0.8.6";
+    sha256 = "0da7357wxsf2sw7xy19gwldvsycgxwp6ih94bvy9gr6g9pzvkbay";
+  }
 ];
 }

@@ -76,6 +76,10 @@
     "deepCompletion" = true;
     "completeUnimported" = true;
   };
+  "D2" = {
+    "updateOnSave" = true;
+    "previewTheme" = "Terminal";
+  };
   "rewrap.wrappingColumn" = 80;
   "prettier.requireConfig" = false;
 
