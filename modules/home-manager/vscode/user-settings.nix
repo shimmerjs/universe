@@ -103,6 +103,9 @@
     };
   };
 
+  # IDK THIS SETTING JUST STUPID
+  "terminal.integrated.enablePersistentSessions" = false;
+
   "files.autoSave" = true;
 
   "workbench.activityBar.visible" = false;

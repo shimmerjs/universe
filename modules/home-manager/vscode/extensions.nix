@@ -20,14 +20,14 @@
   {
     name = "gitlens";
     publisher = "eamodio";
-    version = "2023.4.2605";
-    sha256 = "0wjjkwqy66dn05973qwgnicvm92lc3g2awfpdsly6j4xjcrfwax3";
+    version = "2023.6.111";
+    sha256 = "1chpgsij7l0271arllfpx8i09mcfl3haafqbrad4dxx1ql0x293i";
   }
   {
     name = "prettier-vscode";
     publisher = "esbenp";
-    version = "9.12.0";
-    sha256 = "0nplxds28f9s3ny0xg2w6h6gsq5nfa5x7292hxm00radh9himcbg";
+    version = "9.13.0";
+    sha256 = "1g28yngxnbflqzpjw4ircnfjsmh30cy1i81hl8gk0jqxm8xzbb12";
   }
   {
     name = "markdown-table-formatter";
@@ -50,8 +50,8 @@
   {
     name = "python";
     publisher = "ms-python";
-    version = "2023.7.11161005";
-    sha256 = "1ndccd1q8l41p3vwv2n722qghy5p9aig243px3cs1v95416j19r8";
+    version = "2023.9.11521013";
+    sha256 = "1vy9vv3y8d99i79wqma0vnywwqkxfvacd3vz527k97bi3xjf18ij";
   }
   {
     name = "Theme-TomorrowKit";
@@ -74,8 +74,8 @@
   {
     name = "d2";
     publisher = "Terrastruct";
-    version = "0.8.6";
-    sha256 = "0da7357wxsf2sw7xy19gwldvsycgxwp6ih94bvy9gr6g9pzvkbay";
+    version = "0.8.7";
+    sha256 = "1w0nqm8zqkzixvlrkqgf6lmjg10j0xmjjv4j60xs18nlnsgqg375";
   }
 ];
 }
