@@ -83,7 +83,7 @@
       "ctrl+k" = "clear + terminal scroll active";
     };
     extraConfig = ''
-      include themes/ayu_light.conf
+      include themes/everforest_light_medium.conf
     '';
   };
   # wire up static kitty assets not managed by home-manager/nix

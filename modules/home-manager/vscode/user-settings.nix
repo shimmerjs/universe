@@ -135,4 +135,5 @@
   # bye felicia
   "telemetry.enableCrashReporter" = false;
   "telemetry.enableTelemetry" = false;
+
 }
