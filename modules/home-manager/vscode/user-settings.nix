@@ -88,7 +88,7 @@
   "window.zoomLevel" = 1.5;
 
   # color theme
-  "workbench.colorTheme" = "Ayu Light";
+  "workbench.colorTheme" = "Everforest Light";
 
   "editor" = {
     "tabSize" = 2;

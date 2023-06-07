@@ -37,7 +37,7 @@
 
     # languages
     yarn
-    go_1_19
+    go_1_20
     gopls
     gopkgs
     godef
