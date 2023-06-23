@@ -1,64 +1,14 @@
 {
-    "diagrams": {
-        "branch": "master",
-        "description": ":art: Diagram as Code for prototyping cloud system architectures",
-        "homepage": "https://diagrams.mingrammer.com",
-        "owner": "mingrammer",
-        "repo": "diagrams",
-        "rev": "a71e447dc0b3f83ca2bbbd3e6a1d321ffb4257c0",
-        "sha256": "0yh9s5l56bilf5mf3xw78b8w341nlr8fhhvws5anbjvs3scs7gz1",
-        "type": "tarball",
-        "url": "https://github.com/mingrammer/diagrams/archive/a71e447dc0b3f83ca2bbbd3e6a1d321ffb4257c0.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "github-cli": {
-        "branch": "trunk",
-        "description": "GitHub’s official command line tool",
-        "homepage": "https://cli.github.com",
-        "owner": "cli",
-        "repo": "cli",
-        "rev": "09e86d0ebf5d8afd0c49770c5a580ee04c039c00",
-        "sha256": "0ma6x2x1l7gvqqsqjlyacqincj9ifksn8qxjzc47hm71ia9lc3yz",
-        "type": "tarball",
-        "url": "https://github.com/cli/cli/archive/09e86d0ebf5d8afd0c49770c5a580ee04c039c00.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "version": "v2.20.1"
-    },
-    "go-containerregistry": {
-        "branch": "main",
-        "description": "Go library and CLIs for working with container registries",
-        "homepage": "",
-        "owner": "google",
-        "repo": "go-containerregistry",
-        "rev": "27a6ad623ea9926c58e2bddb7158e9e5278a7dc4",
-        "sha256": "1iwlzzmhrhlcy5ycwphsw4aq3kmy7gwzb5yk1bsvhg6m8pdjv9ig",
-        "type": "tarball",
-        "url": "https://github.com/google/go-containerregistry/archive/27a6ad623ea9926c58e2bddb7158e9e5278a7dc4.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "home-manager": {
-        "branch": "master",
+        "branch": "release-23.05",
         "description": "Manage a user environment using Nix  [maintainer=@rycee] ",
         "homepage": "https://rycee.gitlab.io/home-manager/",
         "owner": "rycee",
         "repo": "home-manager",
-        "rev": "5160039edca28a7e66bad0cfc72a07c91d6768ad",
-        "sha256": "01hr7s1d3lkf1ymvphj83l5q6aqvzwpzhpigky3a26x4f7mhqgfy",
+        "rev": "ac53777f52929bc82efcd2830bfc5aa60bcb4337",
+        "sha256": "14mf0dvawj0z0f225qc8lqpbmwsrf8jjc813s26ba9ihvdjvyq8a",
         "type": "tarball",
-        "url": "https://github.com/rycee/home-manager/archive/5160039edca28a7e66bad0cfc72a07c91d6768ad.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
-        "version": "21.11"
-    },
-    "jq-zsh-plugin": {
-        "branch": "master",
-        "description": "jq zsh plugin",
-        "homepage": "",
-        "owner": "reegnz",
-        "repo": "jq-zsh-plugin",
-        "rev": "e61804e35a593ada9c4d23ee5c957d08974ac382",
-        "sha256": "0x64g0sr4j6kkbnr8hqjgnpbasazljppx612zihgdisc6b074jk0",
-        "type": "tarball",
-        "url": "https://github.com/reegnz/jq-zsh-plugin/archive/e61804e35a593ada9c4d23ee5c957d08974ac382.tar.gz",
+        "url": "https://github.com/rycee/home-manager/archive/ac53777f52929bc82efcd2830bfc5aa60bcb4337.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "niv": {
@@ -67,10 +17,10 @@
         "homepage": "https://github.com/nmattia/niv",
         "owner": "nmattia",
         "repo": "niv",
-        "rev": "ecabfde837ccfb392ccca235f96bfcf4bb8ab186",
-        "sha256": "1aij19grvzbxj0dal49bsnhq1lc23nrglv6p0f00gwznl6109snj",
+        "rev": "914aba08a26cb10538b84d00d6cfb01c9776d80c",
+        "sha256": "0gx316gc7prjay5b0cr13x4zc2pdbiwxkfkpjvrlb2rml80lm4pm",
         "type": "tarball",
-        "url": "https://github.com/nmattia/niv/archive/ecabfde837ccfb392ccca235f96bfcf4bb8ab186.tar.gz",
+        "url": "https://github.com/nmattia/niv/archive/914aba08a26cb10538b84d00d6cfb01c9776d80c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixos-vscode-server": {
@@ -91,10 +41,10 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "8d4d822bc0efa9de6eddc79cb0d82897a9baa750",
-        "sha256": "126yz8xw2cpbxr1aw9k7877yndg0nl6yjanydwcmj87alajxmg91",
+        "rev": "3d8a93602bc54ece7a4e689d9aea1a574e2bbc24",
+        "sha256": "14rbsr3rm7zpvibam8prn40800ma93kkdly6jdgj3q8w2asyaaia",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/8d4d822bc0efa9de6eddc79cb0d82897a9baa750.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/3d8a93602bc54ece7a4e689d9aea1a574e2bbc24.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "version": "21.11"
     },
@@ -123,17 +73,5 @@
         "url": "https://github.com/zsa/wally-cli/archive/b0fafe52cc7fb9d55f2b968d4548c99917c7325c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "version": "2.0.1-osx"
-    },
-    "zsh-syntax-highlighting": {
-        "branch": "master",
-        "description": "Fish shell like syntax highlighting for Zsh.",
-        "homepage": "github.com/zsh-users/zsh-syntax-highlighting",
-        "owner": "zsh-users",
-        "repo": "zsh-syntax-highlighting",
-        "rev": "754cefe0181a7acd42fdcb357a67d0217291ac47",
-        "sha256": "1kjh42payg8mwgpa91cy20ilkqxmqy36vy6brl8k35h9nixhys4i",
-        "type": "tarball",
-        "url": "https://github.com/zsh-users/zsh-syntax-highlighting/archive/754cefe0181a7acd42fdcb357a67d0217291ac47.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
