@@ -1,6 +1,12 @@
 {
   extensions = [
     {
+      name = "cue";
+      publisher = "asdine";
+      version = "0.3.2";
+      sha256 = "03l4ff46z81m5108afdw2ncba3h22qnbckgz3gacsx6i123fmicc";
+    }
+    {
       name = "vscode-bazel";
       publisher = "BazelBuild";
       version = "0.7.0";
@@ -9,8 +15,8 @@
     {
       name = "markdown-mermaid";
       publisher = "bierner";
-      version = "1.18.1";
-      sha256 = "1357sszmicz0jcvf1z9dbbqbls40jjvki5piwvw9sbbznnrr4rr5";
+      version = "1.19.0";
+      sha256 = "1kip6f6mlys3r36sbxnpsy92zz9g06dvgqc51q2jrqz3vbyi9rpy";
     }
     {
       name = "better-toml";
@@ -21,14 +27,14 @@
     {
       name = "gitlens";
       publisher = "eamodio";
-      version = "2023.6.111";
-      sha256 = "1chpgsij7l0271arllfpx8i09mcfl3haafqbrad4dxx1ql0x293i";
+      version = "2023.6.2005";
+      sha256 = "1xykpjgwq2wjm4sgf703yfifa0mny9qd9p8dlxabh6mp9mak54z8";
     }
     {
       name = "prettier-vscode";
       publisher = "esbenp";
-      version = "9.13.0";
-      sha256 = "1g28yngxnbflqzpjw4ircnfjsmh30cy1i81hl8gk0jqxm8xzbb12";
+      version = "9.16.0";
+      sha256 = "0rb4i143f9nmzfbn6k9cl5ilglkwp9hnjpswxhiaqhzq2lzacprh";
     }
     {
       name = "markdown-table-formatter";
@@ -39,8 +45,8 @@
     {
       name = "go";
       publisher = "golang";
-      version = "0.38.0";
-      sha256 = "0i2kmlabpsvrb02ljy9asdlhqssm6as3h438rq0lx67qbjwsirf0";
+      version = "0.39.0";
+      sha256 = "1r9n05szlim86mlk81p8i9s3jgggigxlsfkfbnmdx83nkjil2q95";
     }
     {
       name = "nix-ide";
@@ -51,8 +57,8 @@
     {
       name = "python";
       publisher = "ms-python";
-      version = "2023.9.11521013";
-      sha256 = "1vy9vv3y8d99i79wqma0vnywwqkxfvacd3vz527k97bi3xjf18ij";
+      version = "2023.11.11771009";
+      sha256 = "1v6077aippck9ia3c08wapc5mmw6qrbxa5idn3mi61zpyscd9m4f";
     }
     {
       name = "Theme-TomorrowKit";
