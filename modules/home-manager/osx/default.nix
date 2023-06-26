@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 let
   sources = import <u/nix/sources.nix>;
 in
@@ -14,4 +14,9 @@ in
       };
     };
   };
+
+  home.packages = with pkgs; [
+    # Try to stop OSX updates from breaking Bazel builds...
+    darwin.CF
+  ];
 }
