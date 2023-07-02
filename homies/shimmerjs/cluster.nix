@@ -1,8 +1,11 @@
+let
+  sources = import <u/nix/sources.nix>;
+in
 {
   meta = {
     name = "homestar2";
     description = "shimmerjs k3s cluster orchestrated by his nixos godbox";
-    nixpkgs = import <u/nix>;
+    nixpkgs = import <u/nix> { inherit sources; };
   };
 
   defaults = { pkgs, name, ... }: {
