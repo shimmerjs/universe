@@ -31,9 +31,6 @@
     # build tools
     just
     watchexec
-    gccStdenv
-    gcc
-    gnumake
     docker
 
     # languages

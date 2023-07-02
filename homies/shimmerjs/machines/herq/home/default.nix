@@ -2,6 +2,7 @@
 {
   imports = [
     <u/modules/home-manager>
+    <u/modules/home-manager/linux>
     <u/homies/shimmerjs/home-manager.nix>
     <u/homies/shimmerjs/profiles/play>
     ./git.nix
