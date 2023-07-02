@@ -8,4 +8,10 @@
     userSettings = import ./user-settings.nix;
     keybindings = import ./keybindings.nix;
   };
+
+  programs.zsh = {
+    sessionVariables = {
+      EDITOR = "code --wait";
+    };
+  };
 }

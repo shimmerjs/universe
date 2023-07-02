@@ -1,9 +1,7 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    # clout
-    (google-cloud-sdk.withExtraComponents
-      [ google-cloud-sdk.components.gke-gcloud-auth-plugin ])
+  imports = [
+    <u/modules/home-manager/tools/gcloud>
   ];
 
   programs.zsh = {

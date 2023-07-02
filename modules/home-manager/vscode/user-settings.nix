@@ -48,8 +48,8 @@
     "editor.formatOnSave" = true;
   };
   "[json]" = {
+    "editor.defaultFormatter" = "vscode.json-language-features";
     "editor.formatOnSave" = true;
-    "editor.defaultFormatter" = "esbenp.prettier-vscode";
   };
   "[starlark]" = {
     "editor.tabSize" = 4;
