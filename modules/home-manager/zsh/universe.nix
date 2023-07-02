@@ -4,7 +4,7 @@
       UNIVERSE_HOME = "$HOME/dev/universe";
     };
     shellGlobalAliases = {
-      u = "just --justfile $UNIVERSE_HOME/justfile";
+      uni = "just --justfile $UNIVERSE_HOME/justfile";
     };
   };
 }
