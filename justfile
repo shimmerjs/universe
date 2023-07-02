@@ -29,7 +29,7 @@ home-build-p:
 home-switch:
   @just _home-manager switch
 
-home-build-p:
+home-switch-p:
   @just _pull
   @just home-switch
 
