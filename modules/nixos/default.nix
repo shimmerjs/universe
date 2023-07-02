@@ -17,5 +17,7 @@
 
   time.timeZone = "America/New_York";
 
+  programs.zsh.enable = true;
+
   system.stateVersion = "22.05"; # Did you read the comment?
 }
