@@ -27,7 +27,7 @@ export GOBIN="$GOPATH/bin"
 # - add user controlled bin directory to front of PATH, ensures
 #   those binaries override nix provided binaries when provided
 # - followed by go binaries
-export PATH="$HOME/bin:$GOBIN"
+export PATH="$HOME/bin:$GOBIN:$PATH"
 
 # fzf powered shell history
 h() {
