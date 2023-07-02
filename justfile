@@ -36,6 +36,9 @@ home-switch-p:
 home-backup-switch:
   @just _home-manager-bkp switch
 
+cluster-apply-l +ARGS:
+  @just _c apply-local --sudo "{{ARGS}}"
+
 cluster-build:
   @just _c build
 

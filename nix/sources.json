@@ -1,14 +1,14 @@
 {
     "home-manager": {
-        "branch": "release-23.05",
+        "branch": "master",
         "description": "Manage a user environment using Nix  [maintainer=@rycee] ",
         "homepage": "https://rycee.gitlab.io/home-manager/",
         "owner": "rycee",
         "repo": "home-manager",
-        "rev": "ac53777f52929bc82efcd2830bfc5aa60bcb4337",
-        "sha256": "14mf0dvawj0z0f225qc8lqpbmwsrf8jjc813s26ba9ihvdjvyq8a",
+        "rev": "89d10f8adce369a80e046c2fd56d1e7b7507bb5b",
+        "sha256": "1kbsrb291l0dv0idl6faav5g5rhs8xxvg33dnxx1ffw4yqn8mlkh",
         "type": "tarball",
-        "url": "https://github.com/rycee/home-manager/archive/ac53777f52929bc82efcd2830bfc5aa60bcb4337.tar.gz",
+        "url": "https://github.com/rycee/home-manager/archive/89d10f8adce369a80e046c2fd56d1e7b7507bb5b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "niv": {
@@ -41,10 +41,10 @@
         "homepage": "",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3d8a93602bc54ece7a4e689d9aea1a574e2bbc24",
-        "sha256": "14rbsr3rm7zpvibam8prn40800ma93kkdly6jdgj3q8w2asyaaia",
+        "rev": "8277b539d371bf4308fc5097911aa58bfac1794f",
+        "sha256": "0yh7fpch74zpglhfd0h9i5vpz0my9rv9mvhzd1cin2yaa2b90yq9",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/3d8a93602bc54ece7a4e689d9aea1a574e2bbc24.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/8277b539d371bf4308fc5097911aa58bfac1794f.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
         "version": "21.11"
     },
