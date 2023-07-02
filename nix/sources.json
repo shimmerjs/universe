@@ -29,10 +29,10 @@
         "homepage": null,
         "owner": "msteen",
         "repo": "nixos-vscode-server",
-        "rev": "57f1716bc625d2892579294cc207956679e3d94c",
-        "sha256": "0ahgyd2swkapimvf70ah2y55wpn2hdh1wymfh6492xrkv5x91sqz",
+        "rev": "1e1358493df6529d4c7bc4cc3066f76fd16d4ae6",
+        "sha256": "0sz8njfxn5bw89n6xhlzsbxkafb6qmnszj4qxy2w0hw2mgmjp829",
         "type": "tarball",
-        "url": "https://github.com/msteen/nixos-vscode-server/archive/57f1716bc625d2892579294cc207956679e3d94c.tar.gz",
+        "url": "https://github.com/msteen/nixos-vscode-server/archive/1e1358493df6529d4c7bc4cc3066f76fd16d4ae6.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
