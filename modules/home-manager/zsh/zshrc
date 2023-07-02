@@ -24,12 +24,10 @@ export GO111MODULE="on"
 export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 
-export PATH="$HOME/bin:$GOBIN:$UNIVERSE_HOME/bin:$PATH"
 # - add user controlled bin directory to front of PATH, ensures
 #   those binaries override nix provided binaries when provided
 # - followed by go binaries
-# - followed by this repositories (universe) utils
-export PATH="$HOME/bin:$GOBIN:$UNIVERSE_HOME/bin:$PATH"
+export PATH="$HOME/bin:$GOBIN"
 
 # fzf powered shell history
 h() {
