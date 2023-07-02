@@ -22,8 +22,16 @@ sh +ARGS:
 home-build:
   @just _home-manager build
 
+home-build-p:
+  @just _pull
+  @just home-build
+
 home-switch:
   @just _home-manager switch
+
+home-build-p:
+  @just _pull
+  @just home-switch
 
 home-backup-switch:
   @just _home-manager-bkp switch
@@ -52,3 +60,6 @@ _home-manager-bkp goal:
 
 _c +ARGS="":
   just sh "colmena -f $CLUSTER_CONFIG {{ARGS}}"
+
+_pull:
+  git pull origin master
