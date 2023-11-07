@@ -1,4 +1,5 @@
 {
+  # Go settings
   # language settings, not to be confused with plugins that have the same name
   "[go]" = {
     "codeActionsOnSaveTimeout" = 3000;
@@ -15,6 +16,8 @@
       };
     };
   };
+
+  # Typescript settings
   "[typescript]" = {
     "editor.defaultFormatter" = "esbenp.prettier-vscode";
     "editor.formatOnSave" = true;
@@ -36,7 +39,7 @@
     "updateImportsOnFileMove.enabled" = "always";
   };
   "[markdown]" = {
-    "editor.tabSize" = 4;
+    "editor.tabSize" = 2;
     "editor.formatOnSave" = true;
     "editor.defaultFormatter" = "fcrespo82.markdown-table-formatter";
   };
@@ -56,7 +59,7 @@
     "editor.formatOnSave" = true;
   };
 
-  # extension settings
+  # Extension settings
   "python" = {
     "linting" = {
       "lintOnSave" = true;
@@ -66,26 +69,43 @@
       "autopep8Path" = "~/.nix-profile/bin/autopep8";
     };
   };
+
   "bazel" = {
     "buildifierFixOnFormat" = true;
   };
+
   "go" = {
+    "lintOnSave" = "file";
     "useLanguageServer" = true;
   };
   "gopls" = {
+    "ui.semanticTokens" = true;
+    "ui.completion.completionBudget" = "10ms";
     "deepCompletion" = true;
     "completeUnimported" = true;
   };
+
   "D2" = {
     "updateOnSave" = true;
     "previewTheme" = "Terminal";
   };
-  "rewrap.wrappingColumn" = 80;
+
   "prettier.requireConfig" = false;
 
-  # editor settings
-  # helps deal with explorer font size
-  "window.zoomLevel" = 1.5;
+  # File settings
+  "files" = {
+    # Improve general performance
+    "watcherExclude" = {
+      "**/.git/objects/**" = true;
+      "**/.git/subtree-cache/**" = true;
+      "**/bazel-*/*/**" = true;
+      "**/node_modules/**" = true;
+    };
+  };
+
+  # Editor settings
+  # Helps deal with explorer font size
+  "window.zoomLevel" = 2.0;
 
   # color theme
   "workbench.colorTheme" = "Everforest Light";
@@ -101,6 +121,9 @@
     "bracketPairColorization" = {
       "enabled" = false;
     };
+    "folding" = false;
+    "foldingHighlight" = false;
+    "lightbulb.enabled" = false;
   };
 
   # IDK THIS SETTING JUST STUPID

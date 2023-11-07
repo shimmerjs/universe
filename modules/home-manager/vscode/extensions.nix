@@ -19,18 +19,6 @@
       sha256 = "0g9xrssiw06rik0pz1kpv1smllxvnjfw50207gj70xnlvlxvpqjy";
     }
     {
-      name = "better-toml";
-      publisher = "bungcip";
-      version = "0.3.2";
-      sha256 = "08lhzhrn6p0xwi0hcyp6lj9bvpfj87vr99klzsiy8ji7621dzql3";
-    }
-    {
-      name = "gitlens";
-      publisher = "eamodio";
-      version = "2023.10.2505";
-      sha256 = "1pd6qp8csh4xzbrg4fpmkcp21q48kz1lfwiik160ipkvb06fiv2j";
-    }
-    {
       name = "prettier-vscode";
       publisher = "esbenp";
       version = "10.1.0";
@@ -55,34 +43,28 @@
       sha256 = "1264027sjh9a112si0y0p3pk3y36shj5b4qkpsj207z7lbxqq0wg";
     }
     {
+      name = "gitless";
+      publisher = "maattdd";
+      version = "11.7.2";
+      sha256 = "05zbxi1f1jb53ijnxrj7ixm8xfsxmh8hlb6rwxsfc7gs3hs9k1xd";
+    }
+    {
       name = "python";
       publisher = "ms-python";
-      version = "2023.19.12981006";
-      sha256 = "0n21wvjgv8vvl9945clwprc1rhczj3y1k0xg9nrs5y8i4vhsj9p9";
+      version = "2023.21.13101009";
+      sha256 = "0w58fyzx8qmrw29gv6167ppxcb2qb4jvc392z0w9v5ank351kccv";
     }
     {
       name = "remote-explorer";
       publisher = "ms-vscode";
-      version = "0.5.2023101809";
-      sha256 = "19k6dzl3zh1h8m61x8zcraskql7mqqx3kbwr8627naxx7izdn0dg";
+      version = "0.5.2023110609";
+      sha256 = "0aqx3r7k3ik4cyxn5fad8c6a0rm68gncr7g08pygsfmmmnbwm3jp";
     }
     {
       name = "remote-server";
       publisher = "ms-vscode";
-      version = "1.5.2023102409";
-      sha256 = "11kli5qy18qpv7cagpjdwv6g882i3a8sqay2zvb6582sfymy9kyb";
-    }
-    {
-      name = "Theme-TomorrowKit";
-      publisher = "ms-vscode";
-      version = "0.1.4";
-      sha256 = "0rrfpwsf2v8mra102b9wjg3wzwpxjlsk0p75g748my54cqjk1ad9";
-    }
-    {
-      name = "rose-pine";
-      publisher = "mvllow";
-      version = "2.9.0";
-      sha256 = "18av3p3hrig9jq0l37gv41dp5qbikd5j3lsvfflyjpnl43v7bg49";
+      version = "1.6.2023110609";
+      sha256 = "0r10709r1vffi0wgib5xhq3haa6ash3mk0d9qz3hxi69gng58vd2";
     }
     {
       name = "everforest";
@@ -95,6 +77,12 @@
       publisher = "skellock";
       version = "2.0.0";
       sha256 = "1ph869zl757a11f8iq643f79h8gry7650a9i03mlxyxlqmspzshl";
+    }
+    {
+      name = "even-better-toml";
+      publisher = "tamasfe";
+      version = "0.19.2";
+      sha256 = "0q9z98i446cc8bw1h1mvrddn3dnpnm2gwmzwv2s3fxdni2ggma14";
     }
     {
       name = "ayu";
