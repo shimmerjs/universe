@@ -36,7 +36,7 @@
 
   # sidebar
   { key = "cmd+b"; command = "workbench.action.toggleSidebarVisibility"; }
-
+  { key = "shift+cmd+e"; command = "workbench.view.explorer"; }
   # cursor movement, these are mostly OSX defaults i want on Linux
   { key = "cmd+left"; command = "cursorHome"; when = "textInputFocus"; }
   { key = "cmd+shift+left"; command = "cursorHomeSelect"; when = "textInputFocus"; }

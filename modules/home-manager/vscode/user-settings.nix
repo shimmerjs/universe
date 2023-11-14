@@ -75,7 +75,7 @@
   };
 
   "go" = {
-    "lintOnSave" = "file";
+    "lintOnSave" = "package";
     "useLanguageServer" = true;
   };
   "gopls" = {
@@ -131,7 +131,7 @@
 
   "files.autoSave" = true;
 
-  "workbench.activityBar.visible" = false;
+  "workbench.activityBar.location" = "hidden";
   "workbench.editor.closeOnFileDelete" = true;
   "workbench.editor.enablePreview" = false;
   "workbench.editor.highlightModifiedTabs" = true;
@@ -158,5 +158,4 @@
   # bye felicia
   "telemetry.enableCrashReporter" = false;
   "telemetry.enableTelemetry" = false;
-
 }
