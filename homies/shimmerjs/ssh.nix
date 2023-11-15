@@ -12,7 +12,7 @@
         User shimmerjs
 
       Host herqmo
-        HostName 99.132.141.3
+        HostName 107.223.187.30
         User shimmerjs
 
       Host edge-devmo
