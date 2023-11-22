@@ -19,6 +19,10 @@
       Host pi
         HostName 192.168.1.194
         User pi
+
+      Host hm
+        HostName 192.168.1.208
+        User scott
     '';
   };
 }
