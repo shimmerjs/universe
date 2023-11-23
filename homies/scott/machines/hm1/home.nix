@@ -10,5 +10,6 @@ in
   imports = [
     <u/modules/home-manager>
     <u/modules/home-manager/linux>
+    <u/homies/scott/home-manager.nix>
   ];
 }
