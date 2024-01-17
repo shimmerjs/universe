@@ -8,10 +8,10 @@
   };
   "[go.mod]" = {
     "editor" = {
-      "formatOnSave" = true;
+      "formatOnSave" = "explicit";
       "codeActionsOnSave" = {
         "source" = {
-          "organizeImports" = true;
+          "organizeImports" = "explicit";
         };
       };
     };
@@ -20,19 +20,19 @@
   # Typescript settings
   "[typescript]" = {
     "editor.defaultFormatter" = "esbenp.prettier-vscode";
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "always";
     "editor.codeActionsOnSave" = {
-      "source.fixAll.tslint" = true;
-      "source.organizeImports" = true;
+      "source.fixAll.tslint" = "explicit";
+      "source.organizeImports" = "explicit";
     };
     "updateImportsOnFileMove.enabled" = "always";
   };
   "[html]" = {
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "explicit";
     "editor.defaultFormatter" = "esbenp.prettier-vscode";
   };
   "[css]" = {
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "explicit";
     "editor.defaultFormatter" = "esbenp.prettier-vscode";
   };
   "[javascript]" = {
@@ -40,29 +40,29 @@
   };
   "[markdown]" = {
     "editor.tabSize" = 2;
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "explicit";
     "editor.defaultFormatter" = "fcrespo82.markdown-table-formatter";
   };
   "[nix]" = {
     "editor.defaultFormatter" = "jnoortheen.nix-ide";
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "explicit";
   };
   "[python]" = {
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "explicit";
   };
   "[json]" = {
     "editor.defaultFormatter" = "vscode.json-language-features";
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "explicit";
   };
   "[starlark]" = {
     "editor.tabSize" = 4;
-    "editor.formatOnSave" = true;
+    "editor.formatOnSave" = "explicit";
   };
 
   # Extension settings
   "python" = {
     "linting" = {
-      "lintOnSave" = true;
+      "lintOnSave" = "explicit";
       "pylintPath" = "~/.nix-profile/bin/pylint";
     };
     "formatting" = {
@@ -71,7 +71,7 @@
   };
 
   "bazel" = {
-    "buildifierFixOnFormat" = true;
+    "buildifierFixOnFormat" = "explicit";
   };
 
   "go" = {
@@ -86,7 +86,7 @@
   };
 
   "D2" = {
-    "updateOnSave" = true;
+    "updateOnSave" = "explicit";
     "previewTheme" = "Terminal";
   };
 
