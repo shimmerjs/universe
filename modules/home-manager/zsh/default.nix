@@ -20,6 +20,7 @@ in
       kcopy = "kitty +kitten clipboard";
       kpaste = "kitty +kitten clipboard --get-clipboard";
       j = "just";
+      bzl = "bazel";
       # shortcut for showing images
       icat = "kitty +kitten icat --scale-up";
       # graphviz rendering with friendly settings for rendering in the terminal
