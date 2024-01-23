@@ -32,6 +32,9 @@
     just
     watchexec
     docker
+    gccStdenv
+    gcc
+    gnumake
 
     # languages
     yarn
